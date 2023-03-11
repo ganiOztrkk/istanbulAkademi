@@ -1,0 +1,23 @@
+﻿@model Akademi_Transportation.Models.TblProduct
+@{
+    ViewBag.Title = "AddCustomer";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Gönderi Ekle</h2>
+
+<form method="post">
+    <label>Ürün Adı</label>
+    @Html.TextBoxFor(x => x.ProductName, new { @class = "form-control" })
+    <br />
+    <label>Ürün Tipi</label>
+    @Html.TextBoxFor(x => x.ProductSizeType, new { @class = "form-control" })
+    <br />
+    <label>Ürün Boyutu</label>
+    @Html.TextBoxFor(x => x.ProductSize, new { @class = "form-control" })
+    <br />
+    <label>Ürün Açıklaması</label>
+    @Html.TextAreaFor(x => x.ProductDescription, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Ürün Ekle</button>
+</form>

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbTransportModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TblAbout">
+    <Key>
+      <PropertyRef Name="AboutID" />
+    </Key>
+    <Property Name="AboutID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SmallTitle" Type="nvarchar" MaxLength="100" />
+    <Property Name="LargeTitle" Type="nvarchar" MaxLength="100" />
+    <Property Name="AboutContent" Type="nvarchar" MaxLength="1000" />
+    <Property Name="AboutImage" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TblCategory">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TblCustomer">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerName" Type="varchar" MaxLength="50" />
+    <Property Name="CustomerSurname" Type="varchar" MaxLength="50" />
+    <Property Name="CustomerCity" Type="varchar" MaxLength="50" />
+    <Property Name="CustomerPhone" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TblEmployee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeName" Type="varchar" MaxLength="50" />
+    <Property Name="EmployeeSurname" Type="varchar" MaxLength="50" />
+    <Property Name="EmployeeDescription" Type="varchar" MaxLength="1000" />
+    <Property Name="EmployeeImage" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="TblProcess">
+    <Key>
+      <PropertyRef Name="ProcessID" />
+    </Key>
+    <Property Name="ProcessID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Transportation" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TblProduct">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductName" Type="varchar" MaxLength="50" />
+    <Property Name="ProductSizeType" Type="varchar" MaxLength="50" />
+    <Property Name="ProductSize" Type="varchar" MaxLength="50" />
+    <Property Name="ProductDescription" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TblTransportation">
+    <Key>
+      <PropertyRef Name="TransportationID" />
+    </Key>
+    <Property Name="TransportationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Customer" Type="int" />
+    <Property Name="Category" Type="int" />
+    <Property Name="Product" Type="int" />
+    <Property Name="Employee" Type="int" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="Departure" Type="nvarchar" MaxLength="50" />
+    <Property Name="Arrival" Type="nvarchar" MaxLength="50" />
+    <Property Name="Date" Type="date" />
+    <Property Name="Description" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK_TblProcess_TblTransportation">
+    <End Role="TblTransportation" Type="Self.TblTransportation" Multiplicity="0..1" />
+    <End Role="TblProcess" Type="Self.TblProcess" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblTransportation">
+        <PropertyRef Name="TransportationID" />
+      </Principal>
+      <Dependent Role="TblProcess">
+        <PropertyRef Name="Transportation" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblTransportation_TblCategory">
+    <End Role="TblCategory" Type="Self.TblCategory" Multiplicity="0..1" />
+    <End Role="TblTransportation" Type="Self.TblTransportation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblCategory">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="TblTransportation">
+        <PropertyRef Name="Category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblTransportation_TblCustomer">
+    <End Role="TblCustomer" Type="Self.TblCustomer" Multiplicity="0..1" />
+    <End Role="TblTransportation" Type="Self.TblTransportation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblCustomer">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="TblTransportation">
+        <PropertyRef Name="Customer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblTransportation_TblEmployee">
+    <End Role="TblEmployee" Type="Self.TblEmployee" Multiplicity="0..1" />
+    <End Role="TblTransportation" Type="Self.TblTransportation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblEmployee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="TblTransportation">
+        <PropertyRef Name="Employee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblTransportation_TblProduct">
+    <End Role="TblProduct" Type="Self.TblProduct" Multiplicity="0..1" />
+    <End Role="TblTransportation" Type="Self.TblTransportation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblProduct">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="TblTransportation">
+        <PropertyRef Name="Product" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DbTransportModelStoreContainer">
+    <EntitySet Name="TblAbout" EntityType="Self.TblAbout" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblCategory" EntityType="Self.TblCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblCustomer" EntityType="Self.TblCustomer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblEmployee" EntityType="Self.TblEmployee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblProcess" EntityType="Self.TblProcess" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblProduct" EntityType="Self.TblProduct" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblTransportation" EntityType="Self.TblTransportation" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_TblProcess_TblTransportation" Association="Self.FK_TblProcess_TblTransportation">
+      <End Role="TblTransportation" EntitySet="TblTransportation" />
+      <End Role="TblProcess" EntitySet="TblProcess" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblTransportation_TblCategory" Association="Self.FK_TblTransportation_TblCategory">
+      <End Role="TblCategory" EntitySet="TblCategory" />
+      <End Role="TblTransportation" EntitySet="TblTransportation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblTransportation_TblCustomer" Association="Self.FK_TblTransportation_TblCustomer">
+      <End Role="TblCustomer" EntitySet="TblCustomer" />
+      <End Role="TblTransportation" EntitySet="TblTransportation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblTransportation_TblEmployee" Association="Self.FK_TblTransportation_TblEmployee">
+      <End Role="TblEmployee" EntitySet="TblEmployee" />
+      <End Role="TblTransportation" EntitySet="TblTransportation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblTransportation_TblProduct" Association="Self.FK_TblTransportation_TblProduct">
+      <End Role="TblProduct" EntitySet="TblProduct" />
+      <End Role="TblTransportation" EntitySet="TblTransportation" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,26 @@
+﻿@model Akademi_Transportation.Models.TblProduct
+@{
+    ViewBag.Title = "UpdateCustomer";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Gönderi Güncelleme Sayfası</h2>
+
+<form method="post">
+    <label>Gönderi ID</label>
+    @Html.TextBoxFor(X => X.ProductID, new { @class = "form-control" })
+    <br />
+    <label>Ürün Adı</label>
+    @Html.TextBoxFor(X => X.ProductName, new { @class = "form-control" })
+    <br />
+    <label>Gönderi Türü</label>
+    @Html.TextBoxFor(X => X.ProductSizeType, new { @class = "form-control" })
+    <br />
+    <label>Gönderi Boyutu</label>
+    @Html.TextBoxFor(X => X.ProductSize, new { @class = "form-control" })
+    <br />
+    <label>Gönderi Açıklaması</label>
+    @Html.TextBoxFor(X => X.ProductDescription, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Gönderi Güncelle</button>
+</form>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DbTransportModelStoreContainer" CdmEntityContainer="DbTransportEntities">
+    <EntitySetMapping Name="TblCategory">
+      <EntityTypeMapping TypeName="DbTransportModel.TblCategory">
+        <MappingFragment StoreEntitySet="TblCategory">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblCustomer">
+      <EntityTypeMapping TypeName="DbTransportModel.TblCustomer">
+        <MappingFragment StoreEntitySet="TblCustomer">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerSurname" ColumnName="CustomerSurname" />
+          <ScalarProperty Name="CustomerCity" ColumnName="CustomerCity" />
+          <ScalarProperty Name="CustomerPhone" ColumnName="CustomerPhone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblEmployee">
+      <EntityTypeMapping TypeName="DbTransportModel.TblEmployee">
+        <MappingFragment StoreEntitySet="TblEmployee">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="EmployeeSurname" ColumnName="EmployeeSurname" />
+          <ScalarProperty Name="EmployeeDescription" ColumnName="EmployeeDescription" />
+          <ScalarProperty Name="EmployeeImage" ColumnName="EmployeeImage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblProcess">
+      <EntityTypeMapping TypeName="DbTransportModel.TblProcess">
+        <MappingFragment StoreEntitySet="TblProcess">
+          <ScalarProperty Name="ProcessID" ColumnName="ProcessID" />
+          <ScalarProperty Name="Transportation" ColumnName="Transportation" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblProduct">
+      <EntityTypeMapping TypeName="DbTransportModel.TblProduct">
+        <MappingFragment StoreEntitySet="TblProduct">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductSizeType" ColumnName="ProductSizeType" />
+          <ScalarProperty Name="ProductSize" ColumnName="ProductSize" />
+          <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblTransportation">
+      <EntityTypeMapping TypeName="DbTransportModel.TblTransportation">
+        <MappingFragment StoreEntitySet="TblTransportation">
+          <ScalarProperty Name="TransportationID" ColumnName="TransportationID" />
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Product" ColumnName="Product" />
+          <ScalarProperty Name="Employee" ColumnName="Employee" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Departure" ColumnName="Departure" />
+          <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblAbout">
+      <EntityTypeMapping TypeName="DbTransportModel.TblAbout">
+        <MappingFragment StoreEntitySet="TblAbout">
+          <ScalarProperty Name="AboutImage" ColumnName="AboutImage" />
+          <ScalarProperty Name="AboutContent" ColumnName="AboutContent" />
+          <ScalarProperty Name="LargeTitle" ColumnName="LargeTitle" />
+          <ScalarProperty Name="SmallTitle" ColumnName="SmallTitle" />
+          <ScalarProperty Name="AboutID" ColumnName="AboutID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
