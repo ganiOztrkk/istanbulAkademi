@@ -18,7 +18,7 @@ namespace Akademi_Transportation.Controllers
             ViewBag.customerCount = db.TblCustomer.Count();
             ViewBag.employeeCount = db.TblEmployee.Count();
             var values = Session["UserName"];
-            ViewBag.username = values;
+            ViewBag.userName = Session["UserName"];
             return View();
         }
     }

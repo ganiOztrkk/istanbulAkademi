@@ -15,6 +15,15 @@
           <Property Name="AboutContent" Type="nvarchar" MaxLength="1000" />
           <Property Name="AboutImage" Type="nvarchar" MaxLength="100" />
         </EntityType>
+        <EntityType Name="TblAdmin">
+          <Key>
+            <PropertyRef Name="AdminID" />
+          </Key>
+          <Property Name="AdminID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" />
+          <Property Name="Password" Type="varchar" MaxLength="50" />
+          <Property Name="AdminRole" Type="char" MaxLength="1" />
+        </EntityType>
         <EntityType Name="TblCategory">
           <Key>
             <PropertyRef Name="CategoryID" />
@@ -59,6 +68,7 @@
           <Property Name="ProductSizeType" Type="varchar" MaxLength="50" />
           <Property Name="ProductSize" Type="varchar" MaxLength="50" />
           <Property Name="ProductDescription" Type="varchar" MaxLength="50" />
+          <Property Name="ProductCategory" Type="int" />
         </EntityType>
         <EntityType Name="TblTransportation">
           <Key>
@@ -84,6 +94,18 @@
             </Principal>
             <Dependent Role="TblProcess">
               <PropertyRef Name="Transportation" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblProduct_TblCategory">
+          <End Role="TblCategory" Type="Self.TblCategory" Multiplicity="0..1" />
+          <End Role="TblProduct" Type="Self.TblProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblCategory">
+              <PropertyRef Name="CategoryID" />
+            </Principal>
+            <Dependent Role="TblProduct">
+              <PropertyRef Name="ProductCategory" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -137,6 +159,7 @@
         </Association>
         <EntityContainer Name="DbTransportModelStoreContainer">
           <EntitySet Name="TblAbout" EntityType="Self.TblAbout" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblAdmin" EntityType="Self.TblAdmin" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblCategory" EntityType="Self.TblCategory" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblCustomer" EntityType="Self.TblCustomer" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblEmployee" EntityType="Self.TblEmployee" Schema="dbo" store:Type="Tables" />
@@ -146,6 +169,10 @@
           <AssociationSet Name="FK_TblProcess_TblTransportation" Association="Self.FK_TblProcess_TblTransportation">
             <End Role="TblTransportation" EntitySet="TblTransportation" />
             <End Role="TblProcess" EntitySet="TblProcess" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblProduct_TblCategory" Association="Self.FK_TblProduct_TblCategory">
+            <End Role="TblCategory" EntitySet="TblCategory" />
+            <End Role="TblProduct" EntitySet="TblProduct" />
           </AssociationSet>
           <AssociationSet Name="FK_TblTransportation_TblCategory" Association="Self.FK_TblTransportation_TblCategory">
             <End Role="TblCategory" EntitySet="TblCategory" />
@@ -175,6 +202,7 @@
           <Property Name="CategoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="CategoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="TblTransportation" Relationship="Self.FK_TblTransportation_TblCategory" FromRole="TblCategory" ToRole="TblTransportation" />
+          <NavigationProperty Name="TblProduct" Relationship="DbTransportModel.FK_TblProduct_TblCategory" FromRole="TblCategory" ToRole="TblProduct" />
         </EntityType>
         <EntityType Name="TblCustomer">
           <Key>
@@ -217,6 +245,8 @@
           <Property Name="ProductSize" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="ProductDescription" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="TblTransportation" Relationship="Self.FK_TblTransportation_TblProduct" FromRole="TblProduct" ToRole="TblTransportation" />
+          <Property Name="ProductCategory" Type="Int32" />
+          <NavigationProperty Name="TblCategory" Relationship="DbTransportModel.FK_TblProduct_TblCategory" FromRole="TblProduct" ToRole="TblCategory" />
         </EntityType>
         <EntityType Name="TblTransportation">
           <Key>
@@ -326,6 +356,11 @@
             <End Role="TblTransportation" EntitySet="TblTransportation" />
           </AssociationSet>
           <EntitySet Name="TblAbout" EntityType="DbTransportModel.TblAbout" />
+          <EntitySet Name="TblAdmin" EntityType="DbTransportModel.TblAdmin" />
+          <AssociationSet Name="FK_TblProduct_TblCategory" Association="DbTransportModel.FK_TblProduct_TblCategory">
+            <End Role="TblCategory" EntitySet="TblCategory" />
+            <End Role="TblProduct" EntitySet="TblProduct" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="TblAbout">
           <Key>
@@ -337,6 +372,27 @@
           <Property Name="AboutContent" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
           <Property Name="AboutImage" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
         </EntityType>
+        <EntityType Name="TblAdmin">
+          <Key>
+            <PropertyRef Name="AdminID" />
+          </Key>
+          <Property Name="AdminID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AdminRole" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_TblProduct_TblCategory">
+          <End Type="DbTransportModel.TblCategory" Role="TblCategory" Multiplicity="0..1" />
+          <End Type="DbTransportModel.TblProduct" Role="TblProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblCategory">
+              <PropertyRef Name="CategoryID" />
+            </Principal>
+            <Dependent Role="TblProduct">
+              <PropertyRef Name="ProductCategory" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -385,6 +441,7 @@
           <EntitySetMapping Name="TblProduct">
             <EntityTypeMapping TypeName="DbTransportModel.TblProduct">
               <MappingFragment StoreEntitySet="TblProduct">
+                <ScalarProperty Name="ProductCategory" ColumnName="ProductCategory" />
                 <ScalarProperty Name="ProductID" ColumnName="ProductID" />
                 <ScalarProperty Name="ProductName" ColumnName="ProductName" />
                 <ScalarProperty Name="ProductSizeType" ColumnName="ProductSizeType" />
@@ -417,6 +474,16 @@
                 <ScalarProperty Name="LargeTitle" ColumnName="LargeTitle" />
                 <ScalarProperty Name="SmallTitle" ColumnName="SmallTitle" />
                 <ScalarProperty Name="AboutID" ColumnName="AboutID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblAdmin">
+            <EntityTypeMapping TypeName="DbTransportModel.TblAdmin">
+              <MappingFragment StoreEntitySet="TblAdmin">
+                <ScalarProperty Name="AdminRole" ColumnName="AdminRole" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="AdminID" ColumnName="AdminID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

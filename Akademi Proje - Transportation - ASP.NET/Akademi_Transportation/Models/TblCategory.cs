@@ -18,6 +18,7 @@ namespace Akademi_Transportation.Models
         public TblCategory()
         {
             this.TblTransportation = new HashSet<TblTransportation>();
+            this.TblProduct = new HashSet<TblProduct>();
         }
     
         public int CategoryID { get; set; }
@@ -25,5 +26,7 @@ namespace Akademi_Transportation.Models
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TblTransportation> TblTransportation { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TblProduct> TblProduct { get; set; }
     }
 }

@@ -10,6 +10,15 @@
     <Property Name="AboutContent" Type="nvarchar" MaxLength="1000" />
     <Property Name="AboutImage" Type="nvarchar" MaxLength="100" />
   </EntityType>
+  <EntityType Name="TblAdmin">
+    <Key>
+      <PropertyRef Name="AdminID" />
+    </Key>
+    <Property Name="AdminID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="AdminRole" Type="char" MaxLength="1" />
+  </EntityType>
   <EntityType Name="TblCategory">
     <Key>
       <PropertyRef Name="CategoryID" />
@@ -54,6 +63,7 @@
     <Property Name="ProductSizeType" Type="varchar" MaxLength="50" />
     <Property Name="ProductSize" Type="varchar" MaxLength="50" />
     <Property Name="ProductDescription" Type="varchar" MaxLength="50" />
+    <Property Name="ProductCategory" Type="int" />
   </EntityType>
   <EntityType Name="TblTransportation">
     <Key>
@@ -79,6 +89,18 @@
       </Principal>
       <Dependent Role="TblProcess">
         <PropertyRef Name="Transportation" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblProduct_TblCategory">
+    <End Role="TblCategory" Type="Self.TblCategory" Multiplicity="0..1" />
+    <End Role="TblProduct" Type="Self.TblProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblCategory">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="TblProduct">
+        <PropertyRef Name="ProductCategory" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -132,6 +154,7 @@
   </Association>
   <EntityContainer Name="DbTransportModelStoreContainer">
     <EntitySet Name="TblAbout" EntityType="Self.TblAbout" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblAdmin" EntityType="Self.TblAdmin" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblCategory" EntityType="Self.TblCategory" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblCustomer" EntityType="Self.TblCustomer" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblEmployee" EntityType="Self.TblEmployee" Schema="dbo" store:Type="Tables" />
@@ -141,6 +164,10 @@
     <AssociationSet Name="FK_TblProcess_TblTransportation" Association="Self.FK_TblProcess_TblTransportation">
       <End Role="TblTransportation" EntitySet="TblTransportation" />
       <End Role="TblProcess" EntitySet="TblProcess" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblProduct_TblCategory" Association="Self.FK_TblProduct_TblCategory">
+      <End Role="TblCategory" EntitySet="TblCategory" />
+      <End Role="TblProduct" EntitySet="TblProduct" />
     </AssociationSet>
     <AssociationSet Name="FK_TblTransportation_TblCategory" Association="Self.FK_TblTransportation_TblCategory">
       <End Role="TblCategory" EntitySet="TblCategory" />

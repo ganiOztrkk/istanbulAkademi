@@ -8,6 +8,7 @@ using Akademi_Transportation.Models;
 
 namespace Akademi_Transportation.Controllers
 {
+    [Authorize]
     public class CustomerController : Controller
     {
         DbTransportEntities db = new DbTransportEntities();
@@ -16,7 +17,6 @@ namespace Akademi_Transportation.Controllers
             var values = db.TblCustomer.ToList();
             return View(values);
         }
-
 
 
         [HttpGet]

@@ -43,6 +43,7 @@
     <EntitySetMapping Name="TblProduct">
       <EntityTypeMapping TypeName="DbTransportModel.TblProduct">
         <MappingFragment StoreEntitySet="TblProduct">
+          <ScalarProperty Name="ProductCategory" ColumnName="ProductCategory" />
           <ScalarProperty Name="ProductID" ColumnName="ProductID" />
           <ScalarProperty Name="ProductName" ColumnName="ProductName" />
           <ScalarProperty Name="ProductSizeType" ColumnName="ProductSizeType" />
@@ -75,6 +76,16 @@
           <ScalarProperty Name="LargeTitle" ColumnName="LargeTitle" />
           <ScalarProperty Name="SmallTitle" ColumnName="SmallTitle" />
           <ScalarProperty Name="AboutID" ColumnName="AboutID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblAdmin">
+      <EntityTypeMapping TypeName="DbTransportModel.TblAdmin">
+        <MappingFragment StoreEntitySet="TblAdmin">
+          <ScalarProperty Name="AdminRole" ColumnName="AdminRole" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="AdminID" ColumnName="AdminID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

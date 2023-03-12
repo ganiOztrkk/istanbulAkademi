@@ -7,22 +7,22 @@ using Akademi_Transportation.Models;
 
 namespace Akademi_Transportation.Controllers
 {
-    public class RegisterController : Controller
+    public class SettingsController : Controller
     {
         DbTransportEntities db = new DbTransportEntities();
-        // GET: Register
 
         [HttpGet]
         public ActionResult Index()
         {
-            return View();
+            var values = Session["UserName"];
+            var userValue = db.TblAdmin.Where(x => x.UserName == values).FirstOrDefault();
+            return View(userValue);
         }
         [HttpPost]
         public ActionResult Index(TblAdmin tblAdmin)
         {
-            db.TblAdmin.Add(tblAdmin);
-            db.SaveChanges();
-            return RedirectToAction("Index","Login");
+
+            return View();
         }
     }
 }

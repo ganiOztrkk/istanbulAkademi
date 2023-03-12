@@ -21,6 +21,13 @@ namespace Akademi_Transportation.Controllers
         [HttpGet]
         public ActionResult AddProduct()
         {
+            List<SelectListItem> values = (from x in db.TblCategory
+                select new SelectListItem
+                {
+                    Text = x.CategoryName,
+                    Value = x.CategoryID.ToString(),
+                }).ToList();
+            ViewBag.v = values;
             return View();
         }
 
