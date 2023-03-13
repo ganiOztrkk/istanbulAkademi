@@ -24,8 +24,8 @@ namespace Akademi_Transportation.Controllers
             if (values != null)
             {
                 FormsAuthentication.SetAuthCookie(values.UserName,false);
-                Session["Username"] = tblAdmin.UserName;
-                return RedirectToAction("Index", "Customer");
+                Session["UserName"] = tblAdmin.UserName;
+                return RedirectToAction("Index", "Admin");
             }
             return View();
         }
