@@ -24,5 +24,6 @@ namespace Akademi_Transportation.Controllers
 
             return View();
         }
+
     }
 }
