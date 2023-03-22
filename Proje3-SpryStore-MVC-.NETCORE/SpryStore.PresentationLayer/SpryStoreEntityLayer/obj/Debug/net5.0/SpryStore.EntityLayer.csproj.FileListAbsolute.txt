@@ -1,0 +1,15 @@
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStoreEntityLayer\bin\Debug\net5.0\SpryStore.EntityLayer.deps.json
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStoreEntityLayer\bin\Debug\net5.0\SpryStore.EntityLayer.runtimeconfig.json
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStoreEntityLayer\bin\Debug\net5.0\SpryStore.EntityLayer.runtimeconfig.dev.json
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStoreEntityLayer\bin\Debug\net5.0\SpryStore.EntityLayer.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStoreEntityLayer\bin\Debug\net5.0\SpryStore.EntityLayer.pdb
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStoreEntityLayer\obj\Debug\net5.0\SpryStore.EntityLayer.csproj.AssemblyReference.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStoreEntityLayer\obj\Debug\net5.0\SpryStore.EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStoreEntityLayer\obj\Debug\net5.0\SpryStore.EntityLayer.AssemblyInfoInputs.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStoreEntityLayer\obj\Debug\net5.0\SpryStore.EntityLayer.AssemblyInfo.cs
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStoreEntityLayer\obj\Debug\net5.0\SpryStore.EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStoreEntityLayer\obj\Debug\net5.0\SpryStore.EntityLayer.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStoreEntityLayer\obj\Debug\net5.0\refint\SpryStore.EntityLayer.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStoreEntityLayer\obj\Debug\net5.0\SpryStore.EntityLayer.pdb
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStoreEntityLayer\obj\Debug\net5.0\SpryStore.EntityLayer.genruntimeconfig.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStoreEntityLayer\obj\Debug\net5.0\ref\SpryStore.EntityLayer.dll

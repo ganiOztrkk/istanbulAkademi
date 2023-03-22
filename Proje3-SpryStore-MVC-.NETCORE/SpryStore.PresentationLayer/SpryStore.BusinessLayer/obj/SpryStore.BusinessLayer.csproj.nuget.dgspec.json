@@ -1,0 +1,255 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje3-SpryStore-MVC-.NETCORE\\SpryStore.PresentationLayer\\SpryStore.BusinessLayer\\SpryStore.BusinessLayer.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje3-SpryStore-MVC-.NETCORE\\SpryStore.PresentationLayer\\SpryStore.BusinessLayer\\SpryStore.BusinessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje3-SpryStore-MVC-.NETCORE\\SpryStore.PresentationLayer\\SpryStore.BusinessLayer\\SpryStore.BusinessLayer.csproj",
+        "projectName": "SpryStore.BusinessLayer",
+        "projectPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje3-SpryStore-MVC-.NETCORE\\SpryStore.PresentationLayer\\SpryStore.BusinessLayer\\SpryStore.BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\gani9\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje3-SpryStore-MVC-.NETCORE\\SpryStore.PresentationLayer\\SpryStore.BusinessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gani9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://www.nuget.org/api/v2/curated-feeds/microsoftdotnet/": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje3-SpryStore-MVC-.NETCORE\\SpryStore.PresentationLayer\\SpryStore.DataAccessLayer\\SpryStore.DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje3-SpryStore-MVC-.NETCORE\\SpryStore.PresentationLayer\\SpryStore.DataAccessLayer\\SpryStore.DataAccessLayer.csproj"
+              },
+              "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje3-SpryStore-MVC-.NETCORE\\SpryStore.PresentationLayer\\SpryStoreEntityLayer\\SpryStore.EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje3-SpryStore-MVC-.NETCORE\\SpryStore.PresentationLayer\\SpryStoreEntityLayer\\SpryStore.EntityLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.2.2, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.5.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje3-SpryStore-MVC-.NETCORE\\SpryStore.PresentationLayer\\SpryStore.DataAccessLayer\\SpryStore.DataAccessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje3-SpryStore-MVC-.NETCORE\\SpryStore.PresentationLayer\\SpryStore.DataAccessLayer\\SpryStore.DataAccessLayer.csproj",
+        "projectName": "SpryStore.DataAccessLayer",
+        "projectPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje3-SpryStore-MVC-.NETCORE\\SpryStore.PresentationLayer\\SpryStore.DataAccessLayer\\SpryStore.DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\gani9\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje3-SpryStore-MVC-.NETCORE\\SpryStore.PresentationLayer\\SpryStore.DataAccessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gani9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://www.nuget.org/api/v2/curated-feeds/microsoftdotnet/": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje3-SpryStore-MVC-.NETCORE\\SpryStore.PresentationLayer\\SpryStoreEntityLayer\\SpryStore.EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje3-SpryStore-MVC-.NETCORE\\SpryStore.PresentationLayer\\SpryStoreEntityLayer\\SpryStore.EntityLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje3-SpryStore-MVC-.NETCORE\\SpryStore.PresentationLayer\\SpryStoreEntityLayer\\SpryStore.EntityLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje3-SpryStore-MVC-.NETCORE\\SpryStore.PresentationLayer\\SpryStoreEntityLayer\\SpryStore.EntityLayer.csproj",
+        "projectName": "SpryStore.EntityLayer",
+        "projectPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje3-SpryStore-MVC-.NETCORE\\SpryStore.PresentationLayer\\SpryStoreEntityLayer\\SpryStore.EntityLayer.csproj",
+        "packagesPath": "C:\\Users\\gani9\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje3-SpryStore-MVC-.NETCORE\\SpryStore.PresentationLayer\\SpryStoreEntityLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gani9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://www.nuget.org/api/v2/curated-feeds/microsoftdotnet/": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
