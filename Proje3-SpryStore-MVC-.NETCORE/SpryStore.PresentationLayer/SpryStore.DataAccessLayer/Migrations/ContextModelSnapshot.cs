@@ -64,9 +64,35 @@ namespace SpryStore.DataAccessLayer.Migrations
                     b.Property<string>("CustomerSurname")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("EmployeeID")
+                        .HasColumnType("int");
+
                     b.HasKey("CustomerID");
 
+                    b.HasIndex("EmployeeID");
+
                     b.ToTable("Customers");
+                });
+
+            modelBuilder.Entity("SpryStore.EntityLayer.Concrete.Employee", b =>
+                {
+                    b.Property<int>("EmployeeID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Department")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EmployeeName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EmployeeSurname")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("EmployeeID");
+
+                    b.ToTable("Employees");
                 });
 
             modelBuilder.Entity("SpryStore.EntityLayer.Concrete.Product", b =>
@@ -98,6 +124,17 @@ namespace SpryStore.DataAccessLayer.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("SpryStore.EntityLayer.Concrete.Customer", b =>
+                {
+                    b.HasOne("SpryStore.EntityLayer.Concrete.Employee", "Employee")
+                        .WithMany("Customers")
+                        .HasForeignKey("EmployeeID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Employee");
+                });
+
             modelBuilder.Entity("SpryStore.EntityLayer.Concrete.Product", b =>
                 {
                     b.HasOne("SpryStore.EntityLayer.Concrete.Category", "Category")
@@ -112,6 +149,11 @@ namespace SpryStore.DataAccessLayer.Migrations
             modelBuilder.Entity("SpryStore.EntityLayer.Concrete.Category", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("SpryStore.EntityLayer.Concrete.Employee", b =>
+                {
+                    b.Navigation("Customers");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,0 +1,24 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "ProductDetails";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<form method="post">
+    <input type="hidden" asp-for="ProductID" />
+    <label>Ürün Adı</label>
+    <input type="text" asp-for="ProductName" class="form-control" />
+    <br />
+    <label>Ürün Fiyatı</label>
+    <input type="text" asp-for="Price" class="form-control" />
+    <br />
+    <label>Ürün Görsel</label>
+    <input type="text" asp-for="Image" class="form-control" />
+    <br />
+    <label>Ürün Açıklaması</label>
+    <input type="text" asp-for="Description" class="form-control" />
+    <br />
+    <label>Ürün Kategori</label>
+    <input type="text" asp-for="CategoryID" class="form-control" />
+    <br />
+</form>
+    

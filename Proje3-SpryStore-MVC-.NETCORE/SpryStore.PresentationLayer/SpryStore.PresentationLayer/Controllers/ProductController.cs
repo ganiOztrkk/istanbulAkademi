@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SpryStore.BusinessLayer.Abstract;
+using SpryStore.EntityLayer.Concrete;
 
 namespace SpryStore.PresentationLayer.Controllers
 {
@@ -16,6 +17,47 @@ namespace SpryStore.PresentationLayer.Controllers
         {
             var values = _productService.TGetList();
             return View(values);
+        }
+
+        [HttpGet]
+        public IActionResult AddProduct()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult AddProduct(Product product)
+        {
+            _productService.TInsert(product);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult DeleteProduct(int id)
+        {
+            var value = _productService.TGetByID(id);
+            _productService.TDelete(value);
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public IActionResult UpdateProduct(int id)
+        {
+            var value = _productService.TGetByID(id);
+            return View(value);
+        }
+
+        [HttpPost]
+        public IActionResult UpdateProduct(Product product)
+        {
+            _productService.TUpdate(product);
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public IActionResult ProductDetails(int id)
+        {
+            var value = _productService.TGetByID(id);
+            return View(value);
         }
     }
 }

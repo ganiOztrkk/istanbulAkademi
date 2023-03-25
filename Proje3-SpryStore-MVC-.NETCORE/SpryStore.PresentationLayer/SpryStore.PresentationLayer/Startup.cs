@@ -33,6 +33,13 @@ namespace SpryStore.PresentationLayer
             services.AddScoped<IProductDal, EfProductDal>();
             services.AddScoped<IProductService, ProductManager>();
 
+            services.AddScoped<IEmployeeDal, EfEmployeeDal>();
+            services.AddScoped<IEmployeeService, EmployeeManager>();
+
+            services.AddScoped<ICustomerDal, EfCustomerDal>();
+            services.AddScoped<ICustomerService, CustomerManager>();
+            
+
             services.AddControllersWithViews();
         }
 

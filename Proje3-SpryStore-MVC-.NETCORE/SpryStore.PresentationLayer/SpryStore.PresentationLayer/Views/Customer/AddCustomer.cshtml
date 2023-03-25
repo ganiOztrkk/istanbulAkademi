@@ -1,0 +1,27 @@
+﻿@model Customer
+@{
+    ViewData["Title"] = "AddCustomer";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<form method="post">
+    <label>Müşteri Ad</label>
+    <input type="text" class="form-control" asp-for="CustomerName" />
+    <br/>
+    <label>Müşteri Soyad</label>
+    <input type="text" class="form-control" asp-for="CustomerSurname" />
+    <br />
+    <label>Müşteri Şehir</label>
+    <input type="text" class="form-control" asp-for="CustomerCity" />
+    <br />
+    <label>Müşteri Mail</label>
+    <input type="text" class="form-control" asp-for="CustomerEmail" />
+    <br/>
+    <label>Müşteri Bonus</label>
+    <input type="text" class="form-control" asp-for="CustomerBonus" />
+    <br />
+    <label>Müşteriden Sorumlu Personel</label>
+    <input type="text" class="form-control" asp-for="EmployeeID" />
+    <br />
+    <button class="btn btn-primary">Müşteri Ekle</button>
+</form>

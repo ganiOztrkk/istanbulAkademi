@@ -14,5 +14,7 @@ namespace SpryStore.EntityLayer.Concrete
         public string CustomerEmail { get; set; }
         public string CustomerCity { get; set; }
         public int CustomerBonus { get; set; }
+        public int EmployeeID { get; set; }
+        public Employee Employee { get; set; }
     }
 }

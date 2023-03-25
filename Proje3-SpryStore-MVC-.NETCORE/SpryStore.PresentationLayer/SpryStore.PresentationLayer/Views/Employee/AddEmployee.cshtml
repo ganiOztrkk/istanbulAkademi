@@ -1,0 +1,20 @@
+﻿@model Employee
+@{
+    ViewData["Title"] = "AddEmployee";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<form method="post">
+    <label>Çalışan Adı</label>
+    <input type="text" class="form-control" asp-for="EmployeeName" />
+    <br/>
+    <label>Çalışan Soyadı</label>
+    <input type="text" class="form-control" asp-for="EmployeeSurname" />
+    <br />
+    <label>Çalışan Departmanı</label>
+    <input type="text" class="form-control" asp-for="Department" />
+    <br/>
+    <br/>
+    <button class="btn btn-info">Çalışan Ekle</button>
+</form>
+
