@@ -9,5 +9,6 @@ namespace SpryStore.DataAccessLayer.Abstract
 {
     public interface ICustomerDal : IGenericDal<Customer>
     {
+        List<Customer> GetEmployeeWithName();
     }
 }

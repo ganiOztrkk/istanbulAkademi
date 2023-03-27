@@ -1,9 +1,8 @@
 ﻿@model Customer
 @{
     ViewData["Title"] = "AddCustomer";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
 }
-
 <form method="post">
     <label>Müşteri Ad</label>
     <input type="text" class="form-control" asp-for="CustomerName" />

@@ -9,5 +9,6 @@ namespace SpryStore.BusinessLayer.Abstract
 {
     public interface ICustomerService : IGenericService<Customer>
     {
+        List<Customer> TGetEmployeeWithName();
     }
 }

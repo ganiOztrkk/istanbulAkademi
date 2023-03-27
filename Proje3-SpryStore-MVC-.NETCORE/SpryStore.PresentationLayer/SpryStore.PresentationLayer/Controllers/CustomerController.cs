@@ -15,7 +15,7 @@ namespace SpryStore.PresentationLayer.Controllers
 
         public IActionResult Index()
         {
-            var values = _customerService.TGetList();
+            var values = _customerService.TGetEmployeeWithName();
             return View(values);
         }
 

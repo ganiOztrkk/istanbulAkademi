@@ -1,7 +1,7 @@
 ﻿@model List<Product>
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
 
@@ -22,7 +22,7 @@
             <td>@item.ProductID</td>
             <td>@item.ProductName</td>
             <td>@item.Price ₺</td>
-            <td>@item.CategoryID</td>
+            <td>@item.Category.CategoryName</td>
             <td><a href="/Product/DeleteProduct/@item.ProductID" class="btn btn-danger">Sil</a></td>
             <td><a href="/Product/UpdateProduct/@item.ProductID" class="btn btn-success">Güncelle</a></td>
             <td><a href="/Product/ProductDetails/@item.ProductID" class="btn btn-dark">Detaylar</a></td>

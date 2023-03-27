@@ -42,5 +42,10 @@ namespace SpryStore.BusinessLayer.Concrete
         {
             return _customerDal.GetList();
         }
+
+        public List<Customer> TGetEmployeeWithName()
+        {
+            return _customerDal.GetEmployeeWithName();
+        }
     }
 }

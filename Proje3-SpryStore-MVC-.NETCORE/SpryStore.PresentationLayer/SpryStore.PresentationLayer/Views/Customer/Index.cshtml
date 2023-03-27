@@ -1,7 +1,7 @@
 ﻿@model List<Customer>
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
 <table class="table table-bordered">
@@ -25,7 +25,7 @@
             <td>@item.CustomerCity</td>
             <td>@item.CustomerEmail</td>
             <td>@item.CustomerBonus</td>
-            <td>@item.EmployeeID</td>
+            <td>@item.Employee.EmployeeName</td>
             <td><a href="/Customer/DeleteCustomer/@item.CustomerID" class="btn btn-danger">Sil</a></td>
             <td><a href="/Customer/UpdateCustomer/@item.CustomerID" class="btn btn-success">Güncelle</a></td>
         </tr>
