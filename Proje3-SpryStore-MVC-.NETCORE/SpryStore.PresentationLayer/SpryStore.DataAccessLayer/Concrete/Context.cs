@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using SpryStore.EntityLayer.Concrete;
 
 namespace SpryStore.DataAccessLayer.Concrete
 {
-    public class Context : DbContext // kalıtım almamızın sebebi dbset metodunu kullanmamızın gerekmesidir.
+    public class Context : IdentityDbContext // kalıtım almamızın sebebi dbset metodunu kullanmamızın gerekmesidir.
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

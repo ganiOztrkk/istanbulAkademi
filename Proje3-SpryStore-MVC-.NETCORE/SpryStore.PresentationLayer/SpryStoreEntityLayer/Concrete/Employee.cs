@@ -13,6 +13,7 @@ namespace SpryStore.EntityLayer.Concrete
         public string EmployeeName { get; set; }
         public string EmployeeSurname { get; set; }
         public string Department { get; set; }
+        public string Description { get; set; }
         public List<Customer> Customers { get; set; }
     }
 }
