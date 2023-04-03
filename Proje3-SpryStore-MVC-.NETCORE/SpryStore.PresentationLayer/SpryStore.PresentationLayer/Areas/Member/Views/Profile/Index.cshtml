@@ -1,0 +1,24 @@
+﻿@model SpryStore.PresentationLayer.Areas.Member.Models.UserEditViewModel
+
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<form method="post">
+    <label>Adınız</label>
+    <input type="text" asp-for="Name" class="form-control"/>
+    <br/>
+    <label>Soyadınız</label>
+    <input type="text" asp-for="Surname" class="form-control"/>
+    <br/>
+    <label>Telefon Numarınız</label>
+    <input type="text" asp-for="Phone" class="form-control"/>
+    <br/>
+    <label>Mail Adresiniz</label>
+    <input type="text" asp-for="Mail" class="form-control"/>
+    <br/>
+    <label>Şehriniz</label>
+    <input type="text" asp-for="City" class="form-control" />
+    <br />
+    <button class="btn btn-outline-primary">Güncelle</button>
+</form>

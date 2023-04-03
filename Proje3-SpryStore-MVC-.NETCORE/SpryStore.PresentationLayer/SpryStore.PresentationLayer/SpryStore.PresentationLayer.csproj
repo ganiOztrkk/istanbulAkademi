@@ -29,10 +29,7 @@
   <ItemGroup>
     <Folder Include="Areas\Catalog\Data\" />
     <Folder Include="Areas\Catalog\Models\" />
-    <Folder Include="Areas\Member\Controllers\" />
     <Folder Include="Areas\Member\Data\" />
-    <Folder Include="Areas\Member\Models\" />
-    <Folder Include="Areas\Member\Views\" />
   </ItemGroup>
 
 </Project>

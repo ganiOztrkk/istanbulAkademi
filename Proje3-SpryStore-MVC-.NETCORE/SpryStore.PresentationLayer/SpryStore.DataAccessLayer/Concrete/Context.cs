@@ -9,7 +9,7 @@ using SpryStore.EntityLayer.Concrete;
 
 namespace SpryStore.DataAccessLayer.Concrete
 {
-    public class Context : IdentityDbContext // kalıtım almamızın sebebi dbset metodunu kullanmamızın gerekmesidir.
+    public class Context : IdentityDbContext<AppUser, AppRole, int> // kalıtım almamızın sebebi dbset metodunu kullanmamızın gerekmesidir.
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
