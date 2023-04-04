@@ -18,10 +18,10 @@
         <tr>
             <td>@item.Id</td>
             <td>@item.Name</td>
-            <td><a href="#" class="btn btn-outline-danger">Sil</a></td>
-            <td><a href="#" class="btn btn-outline-success">Güncelle</a></td>
+            <td><a href="/Role/DeleteRole/@item.Id" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Role/UpdateRole/@item.Id" class="btn btn-outline-success">Güncelle</a></td>
         </tr>
     }
 </table>
 
-<a href="#" class="btn btn-outline-primary">Yeni Rol Girişi</a>
+<a href="/Role/AddRole/" class="btn btn-outline-primary">Yeni Rol Girişi</a>

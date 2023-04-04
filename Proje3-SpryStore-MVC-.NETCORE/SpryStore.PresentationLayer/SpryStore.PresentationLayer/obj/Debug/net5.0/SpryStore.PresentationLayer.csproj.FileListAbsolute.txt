@@ -203,3 +203,5 @@ C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\Sp
 C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStore.PresentationLayer\obj\Debug\net5.0\Razor\Areas\Member\Views\_ViewImports.cshtml.g.cs
 C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStore.PresentationLayer\obj\Debug\net5.0\Razor\Views\User\Index.cshtml.g.cs
 C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStore.PresentationLayer\obj\Debug\net5.0\Razor\Views\Role\Index.cshtml.g.cs
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStore.PresentationLayer\obj\Debug\net5.0\Razor\Views\Role\AddRole.cshtml.g.cs
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStore.PresentationLayer\obj\Debug\net5.0\Razor\Views\Role\UpdateRole.cshtml.g.cs
