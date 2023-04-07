@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SpryStore.EntityLayer.Concrete;
@@ -6,6 +7,7 @@ using SpryStore.PresentationLayer.Models;
 
 namespace SpryStore.PresentationLayer.Controllers
 {
+    [AllowAnonymous]
     public class LoginController : Controller
     {
         private readonly SignInManager<AppUser> _signInManager;

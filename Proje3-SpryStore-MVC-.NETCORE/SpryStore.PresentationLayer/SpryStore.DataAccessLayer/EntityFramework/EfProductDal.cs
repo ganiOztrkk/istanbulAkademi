@@ -18,5 +18,11 @@ namespace SpryStore.DataAccessLayer.EntityFramework
             var context = new Context();
             return context.Products.Include(x => x.Category).ToList();
         }
+
+        public List<Product> GetLast4Product()
+        {
+            var context = new Context();
+            return context.Products.Take(4).OrderByDescending(x=> x.ProductID).ToList();
+        }
     }
 }

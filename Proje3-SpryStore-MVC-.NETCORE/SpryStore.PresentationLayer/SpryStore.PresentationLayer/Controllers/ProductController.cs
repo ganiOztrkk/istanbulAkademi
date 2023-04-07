@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using SpryStore.BusinessLayer.Abstract;
@@ -70,6 +71,12 @@ namespace SpryStore.PresentationLayer.Controllers
         {
             var value = _productService.TGetByID(id);
             return View(value);
+        }
+
+        public IActionResult GetLast4Products()
+        {
+            var values = _productService.TGetLast4Product();
+            return View(values);
         }
     }
 }
