@@ -120,6 +120,30 @@ namespace SpryStore.DataAccessLayer.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("SpryStore.EntityLayer.Concrete.Address", b =>
+                {
+                    b.Property<int>("AddressID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("AboutDetails1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AboutDetails2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AboutTitle")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MapLocation")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("AddressID");
+
+                    b.ToTable("Addresses");
+                });
+
             modelBuilder.Entity("SpryStore.EntityLayer.Concrete.AppRole", b =>
                 {
                     b.Property<int>("Id")

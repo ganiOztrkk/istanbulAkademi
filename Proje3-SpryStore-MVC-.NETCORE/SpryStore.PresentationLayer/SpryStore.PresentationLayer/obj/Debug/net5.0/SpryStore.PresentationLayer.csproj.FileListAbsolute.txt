@@ -217,3 +217,5 @@ C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\Sp
 C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStore.PresentationLayer\obj\Debug\net5.0\Razor\Areas\Catalog\Views\Contact\Index.cshtml.g.cs
 C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStore.PresentationLayer\obj\Debug\net5.0\Razor\Views\Shared\Components\_ContactHeader\Default.cshtml.g.cs
 C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStore.PresentationLayer\obj\Debug\net5.0\Razor\Views\Shared\Components\_MapContact\Default.cshtml.g.cs
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStore.PresentationLayer\obj\Debug\net5.0\Razor\Views\Shared\Components\_SendMessage\Default.cshtml.g.cs
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje3-SpryStore-MVC-.NETCORE\SpryStore.PresentationLayer\SpryStore.PresentationLayer\obj\Debug\net5.0\Razor\Areas\Catalog\Views\Contact\SendMessage.cshtml.g.cs
