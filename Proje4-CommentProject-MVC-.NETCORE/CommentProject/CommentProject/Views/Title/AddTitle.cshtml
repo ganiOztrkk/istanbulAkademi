@@ -1,0 +1,8 @@
+﻿@model Title
+@{
+    Layout = null;
+}
+
+<div class="container">
+    @Html.DropDownListFor(x=> x.CategoryID,(List<SelectListItem>)ViewBag.v)
+</div>

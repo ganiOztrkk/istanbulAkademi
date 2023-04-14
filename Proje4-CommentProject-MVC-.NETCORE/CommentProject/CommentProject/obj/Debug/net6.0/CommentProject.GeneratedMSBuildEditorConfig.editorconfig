@@ -32,12 +32,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/gani9/Documents/GitHub/istanbulAkademi/Proje4-CommentProject-MVC-.NETCORE/CommentProject/CommentProject/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gani9/Documents/GitHub/istanbulAkademi/Proje4-CommentProject-MVC-.NETCORE/CommentProject/CommentProject/Views/Register/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gani9/Documents/GitHub/istanbulAkademi/Proje4-CommentProject-MVC-.NETCORE/CommentProject/CommentProject/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gani9/Documents/GitHub/istanbulAkademi/Proje4-CommentProject-MVC-.NETCORE/CommentProject/CommentProject/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gani9/Documents/GitHub/istanbulAkademi/Proje4-CommentProject-MVC-.NETCORE/CommentProject/CommentProject/Views/Title/AddTitle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGl0bGVcQWRkVGl0bGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gani9/Documents/GitHub/istanbulAkademi/Proje4-CommentProject-MVC-.NETCORE/CommentProject/CommentProject/Views/Title/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGl0bGVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gani9/Documents/GitHub/istanbulAkademi/Proje4-CommentProject-MVC-.NETCORE/CommentProject/CommentProject/Views/_ViewImports.cshtml]
