@@ -1,0 +1,17 @@
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.BusinessLayer\bin\Debug\net6.0\CommentProject.BusinessLayer.deps.json
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.BusinessLayer\bin\Debug\net6.0\CommentProject.BusinessLayer.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.BusinessLayer\bin\Debug\net6.0\CommentProject.BusinessLayer.pdb
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.BusinessLayer\bin\Debug\net6.0\CommentProject.DataAccessLayer.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.BusinessLayer\bin\Debug\net6.0\CommentProject.EntityLayer.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.BusinessLayer\bin\Debug\net6.0\CommentProject.DataAccessLayer.pdb
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.BusinessLayer\bin\Debug\net6.0\CommentProject.EntityLayer.pdb
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.BusinessLayer\obj\Debug\net6.0\CommentProject.BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.BusinessLayer\obj\Debug\net6.0\CommentProject.BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.BusinessLayer\obj\Debug\net6.0\CommentProject.BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.BusinessLayer\obj\Debug\net6.0\CommentProject.BusinessLayer.AssemblyInfo.cs
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.BusinessLayer\obj\Debug\net6.0\CommentProject.BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.BusinessLayer\obj\Debug\net6.0\CommentProject.BusinessLayer.csproj.CopyComplete
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.BusinessLayer\obj\Debug\net6.0\CommentProject.BusinessLayer.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.BusinessLayer\obj\Debug\net6.0\refint\CommentProject.BusinessLayer.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.BusinessLayer\obj\Debug\net6.0\CommentProject.BusinessLayer.pdb
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.BusinessLayer\obj\Debug\net6.0\ref\CommentProject.BusinessLayer.dll

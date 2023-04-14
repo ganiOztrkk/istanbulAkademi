@@ -1,0 +1,14 @@
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProjectEntityLayer\bin\Debug\net6.0\CommentProject.EntityLayer.deps.json
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProjectEntityLayer\bin\Debug\net6.0\CommentProject.EntityLayer.runtimeconfig.json
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProjectEntityLayer\bin\Debug\net6.0\CommentProject.EntityLayer.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProjectEntityLayer\bin\Debug\net6.0\CommentProject.EntityLayer.pdb
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProjectEntityLayer\obj\Debug\net6.0\CommentProject.EntityLayer.csproj.AssemblyReference.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProjectEntityLayer\obj\Debug\net6.0\CommentProject.EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProjectEntityLayer\obj\Debug\net6.0\CommentProject.EntityLayer.AssemblyInfoInputs.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProjectEntityLayer\obj\Debug\net6.0\CommentProject.EntityLayer.AssemblyInfo.cs
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProjectEntityLayer\obj\Debug\net6.0\CommentProject.EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProjectEntityLayer\obj\Debug\net6.0\CommentProject.EntityLayer.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProjectEntityLayer\obj\Debug\net6.0\refint\CommentProject.EntityLayer.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProjectEntityLayer\obj\Debug\net6.0\CommentProject.EntityLayer.pdb
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProjectEntityLayer\obj\Debug\net6.0\CommentProject.EntityLayer.genruntimeconfig.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProjectEntityLayer\obj\Debug\net6.0\ref\CommentProject.EntityLayer.dll

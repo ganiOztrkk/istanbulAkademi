@@ -13,10 +13,11 @@ namespace CommentProject.EntityLayer.Concrete
         public string CommentDetails { get; set; }
         public DateTime CommentDate { get; set; }
         public bool CommentStatus { get; set; }
-        public int ContentID { get; set; }
-        public Content Content { get; set; }
 
-        public int AppUserID { get; set; }
+        public int TitleID { get; set; }
+        public Title Title { get; set; }
+
+        public int? AppUserID { get; set; }
         public AppUser AppUser { get; set; }
 
     }

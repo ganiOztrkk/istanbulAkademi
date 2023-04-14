@@ -1,0 +1,17 @@
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.DataAccessLayer\bin\Debug\net6.0\CommentProject.DataAccessLayer.deps.json
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.DataAccessLayer\bin\Debug\net6.0\CommentProject.DataAccessLayer.runtimeconfig.json
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.DataAccessLayer\bin\Debug\net6.0\CommentProject.DataAccessLayer.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.DataAccessLayer\bin\Debug\net6.0\CommentProject.DataAccessLayer.pdb
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.DataAccessLayer\bin\Debug\net6.0\CommentProject.EntityLayer.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.DataAccessLayer\bin\Debug\net6.0\CommentProject.EntityLayer.pdb
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.DataAccessLayer\obj\Debug\net6.0\CommentProject.DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.DataAccessLayer\obj\Debug\net6.0\CommentProject.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.DataAccessLayer\obj\Debug\net6.0\CommentProject.DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.DataAccessLayer\obj\Debug\net6.0\CommentProject.DataAccessLayer.AssemblyInfo.cs
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.DataAccessLayer\obj\Debug\net6.0\CommentProject.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.DataAccessLayer\obj\Debug\net6.0\CommentProject.DataAccessLayer.csproj.CopyComplete
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.DataAccessLayer\obj\Debug\net6.0\CommentProject.DataAccessLayer.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.DataAccessLayer\obj\Debug\net6.0\refint\CommentProject.DataAccessLayer.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.DataAccessLayer\obj\Debug\net6.0\CommentProject.DataAccessLayer.pdb
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.DataAccessLayer\obj\Debug\net6.0\CommentProject.DataAccessLayer.genruntimeconfig.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje4-CommentProject-MVC-.NETCORE\CommentProject\CommentProject.DataAccessLayer\obj\Debug\net6.0\ref\CommentProject.DataAccessLayer.dll

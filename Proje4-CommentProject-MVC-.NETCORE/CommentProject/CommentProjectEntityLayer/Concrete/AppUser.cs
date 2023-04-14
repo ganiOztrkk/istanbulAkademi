@@ -12,8 +12,9 @@ namespace CommentProject.EntityLayer.Concrete
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Image { get; set; }
+
         public List<Comment> Comments { get; set; }
-        public List<Content> Contents { get; set; }
+        public List<Title> Titles { get; set; }
 
     }
 }
