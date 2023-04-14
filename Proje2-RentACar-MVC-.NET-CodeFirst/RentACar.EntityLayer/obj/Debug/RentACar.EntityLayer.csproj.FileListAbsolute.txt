@@ -10,3 +10,15 @@ C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje2-RentACar-MVC-CodeFirst\Re
 C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje2-RentACar-MVC-CodeFirst\RentACar.EntityLayer\obj\Debug\RentACar.EntityLayer.csproj.CopyComplete
 C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje2-RentACar-MVC-CodeFirst\RentACar.EntityLayer\obj\Debug\RentACar.EntityLayer.dll
 C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje2-RentACar-MVC-CodeFirst\RentACar.EntityLayer\obj\Debug\RentACar.EntityLayer.pdb
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje2-RentACar-MVC-.NET-CodeFirst\RentACar.EntityLayer\bin\Debug\RentACar.EntityLayer.dll.config
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje2-RentACar-MVC-.NET-CodeFirst\RentACar.EntityLayer\bin\Debug\RentACar.EntityLayer.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje2-RentACar-MVC-.NET-CodeFirst\RentACar.EntityLayer\bin\Debug\RentACar.EntityLayer.pdb
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje2-RentACar-MVC-.NET-CodeFirst\RentACar.EntityLayer\bin\Debug\EntityFramework.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje2-RentACar-MVC-.NET-CodeFirst\RentACar.EntityLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje2-RentACar-MVC-.NET-CodeFirst\RentACar.EntityLayer\bin\Debug\EntityFramework.xml
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje2-RentACar-MVC-.NET-CodeFirst\RentACar.EntityLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje2-RentACar-MVC-.NET-CodeFirst\RentACar.EntityLayer\obj\Debug\RentACar.EntityLayer.csproj.AssemblyReference.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje2-RentACar-MVC-.NET-CodeFirst\RentACar.EntityLayer\obj\Debug\RentACar.EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje2-RentACar-MVC-.NET-CodeFirst\RentACar.EntityLayer\obj\Debug\RentACar.EntityLayer.csproj.CopyComplete
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje2-RentACar-MVC-.NET-CodeFirst\RentACar.EntityLayer\obj\Debug\RentACar.EntityLayer.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje2-RentACar-MVC-.NET-CodeFirst\RentACar.EntityLayer\obj\Debug\RentACar.EntityLayer.pdb
