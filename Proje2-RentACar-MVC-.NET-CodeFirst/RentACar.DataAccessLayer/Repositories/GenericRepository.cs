@@ -12,7 +12,7 @@ namespace RentACar.DataAccessLayer.Repositories
     public class GenericRepository<T> : IGenericDal<T> where T : class
     {
         Context context = new Context();
-        DbSet<T> _object;
+        readonly DbSet<T> _object;
 
         public GenericRepository()
         {
