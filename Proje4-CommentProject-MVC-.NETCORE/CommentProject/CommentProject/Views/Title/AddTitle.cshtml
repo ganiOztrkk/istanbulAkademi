@@ -3,6 +3,17 @@
     Layout = null;
 }
 
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<br/>
 <div class="container">
-    @Html.DropDownListFor(x=> x.CategoryID,(List<SelectListItem>)ViewBag.v)
+    <br/>
+    <form method="post">
+        <label>Kategori Seçiniz</label>
+        @Html.DropDownListFor(x => x.CategoryID, (List<SelectListItem>)ViewBag.v)
+        <br /><br/>
+        <input type="text" class="form-control" placeholder="Başlığı Giriniz" asp-for="TitleName"/>
+        <br/>
+        <button class="btn btn-outline-success">Başlığı Oluştur</button>
+    </form>
 </div>
