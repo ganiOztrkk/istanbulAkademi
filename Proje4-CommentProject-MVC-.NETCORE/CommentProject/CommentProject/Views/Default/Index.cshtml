@@ -32,7 +32,7 @@
         </div>
     </aside>
 
-    @await Component.InvokeAsync("_CommentListByTitle")
+    @await Component.InvokeAsync("_CommentListByTitle", new {id = ViewBag.i})
 
     <aside class="control-sidebar control-sidebar-dark">
     </aside>

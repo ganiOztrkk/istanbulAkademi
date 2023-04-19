@@ -1,13 +1,12 @@
 ﻿@model Title
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
 }
 
 <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
 
 <br/>
 <div class="container">
-    <br/>
     <form method="post">
         <label>Kategori Seçiniz</label>
         @Html.DropDownListFor(x => x.CategoryID, (List<SelectListItem>)ViewBag.v)
