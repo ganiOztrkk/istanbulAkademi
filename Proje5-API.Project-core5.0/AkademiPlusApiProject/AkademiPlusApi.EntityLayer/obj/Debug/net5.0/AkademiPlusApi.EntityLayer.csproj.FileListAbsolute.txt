@@ -1,0 +1,15 @@
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje5-API.Project-core5.0\AkademiPlusApiProject\AkademiPlusApi.EntityLayer\bin\Debug\net5.0\AkademiPlusApi.EntityLayer.deps.json
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje5-API.Project-core5.0\AkademiPlusApiProject\AkademiPlusApi.EntityLayer\bin\Debug\net5.0\AkademiPlusApi.EntityLayer.runtimeconfig.json
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje5-API.Project-core5.0\AkademiPlusApiProject\AkademiPlusApi.EntityLayer\bin\Debug\net5.0\AkademiPlusApi.EntityLayer.runtimeconfig.dev.json
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje5-API.Project-core5.0\AkademiPlusApiProject\AkademiPlusApi.EntityLayer\bin\Debug\net5.0\AkademiPlusApi.EntityLayer.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje5-API.Project-core5.0\AkademiPlusApiProject\AkademiPlusApi.EntityLayer\bin\Debug\net5.0\AkademiPlusApi.EntityLayer.pdb
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje5-API.Project-core5.0\AkademiPlusApiProject\AkademiPlusApi.EntityLayer\obj\Debug\net5.0\AkademiPlusApi.EntityLayer.csproj.AssemblyReference.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje5-API.Project-core5.0\AkademiPlusApiProject\AkademiPlusApi.EntityLayer\obj\Debug\net5.0\AkademiPlusApi.EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje5-API.Project-core5.0\AkademiPlusApiProject\AkademiPlusApi.EntityLayer\obj\Debug\net5.0\AkademiPlusApi.EntityLayer.AssemblyInfoInputs.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje5-API.Project-core5.0\AkademiPlusApiProject\AkademiPlusApi.EntityLayer\obj\Debug\net5.0\AkademiPlusApi.EntityLayer.AssemblyInfo.cs
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje5-API.Project-core5.0\AkademiPlusApiProject\AkademiPlusApi.EntityLayer\obj\Debug\net5.0\AkademiPlusApi.EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje5-API.Project-core5.0\AkademiPlusApiProject\AkademiPlusApi.EntityLayer\obj\Debug\net5.0\AkademiPlusApi.EntityLayer.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje5-API.Project-core5.0\AkademiPlusApiProject\AkademiPlusApi.EntityLayer\obj\Debug\net5.0\refint\AkademiPlusApi.EntityLayer.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje5-API.Project-core5.0\AkademiPlusApiProject\AkademiPlusApi.EntityLayer\obj\Debug\net5.0\AkademiPlusApi.EntityLayer.pdb
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje5-API.Project-core5.0\AkademiPlusApiProject\AkademiPlusApi.EntityLayer\obj\Debug\net5.0\AkademiPlusApi.EntityLayer.genruntimeconfig.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje5-API.Project-core5.0\AkademiPlusApiProject\AkademiPlusApi.EntityLayer\obj\Debug\net5.0\ref\AkademiPlusApi.EntityLayer.dll
