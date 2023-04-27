@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AkademiPlusApi.ConsumeLayer.props" />
+</Project>
