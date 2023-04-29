@@ -42,5 +42,10 @@ namespace AkademiPlusApi.BusinessLayer.Concrete
         {
             return _customerDal.GetByID(id);
         }
+
+        public int TGetCustomerCounts()
+        {
+            return _customerDal.GetCustomerCounts();
+        }
     }
 }

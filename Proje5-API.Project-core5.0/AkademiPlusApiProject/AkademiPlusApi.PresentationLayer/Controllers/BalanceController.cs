@@ -45,5 +45,12 @@ namespace AkademiPlusApi.PresentationLayer.Controllers
             _balanceService.TUpdate(balance);
             return Ok();
         }
+
+        [HttpGet("{id}")]
+        public IActionResult GetBalance(int id)
+        {
+            var values = _balanceService.TGetByID(id);
+            return Ok(values);
+        }
     }
 }

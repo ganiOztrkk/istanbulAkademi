@@ -51,5 +51,11 @@ namespace AkademiPlusApi.PresentationLayer.Controllers
             var values = _customerService.TGetByID(id);
             return Ok(values);
         }
+
+        [HttpGet("GetCustomerCounts")]
+        public IActionResult GetCustomerCounts()
+        {
+            return Ok(_customerService.TGetCustomerCounts());
+        }
     }
 }
