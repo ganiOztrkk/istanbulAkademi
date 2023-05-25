@@ -1,4 +1,5 @@
-﻿using AkademiPlusApi.BusinessLayer.Abstract;
+﻿using System.Linq;
+using AkademiPlusApi.BusinessLayer.Abstract;
 using AkademiPlusApi.EntityLayer.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,10 +11,12 @@ namespace AkademiPlusApi.PresentationLayer.Controllers
     public class CustomerController : ControllerBase
     {
         private readonly ICustomerService _customerService;
+        private readonly IBalanceService _balanceService;
 
-        public CustomerController(ICustomerService customerService)
+        public CustomerController(ICustomerService customerService, IBalanceService balanceService)
         {
             _customerService = customerService;
+            _balanceService = balanceService;
         }
 
         [HttpGet]
@@ -27,6 +30,13 @@ namespace AkademiPlusApi.PresentationLayer.Controllers
         public IActionResult CustomerAdd(Customer customer)
         {
             _customerService.TInsert(customer);
+            Balance balance = new Balance()
+            {
+                AccountNumber = customer.AccountNumber,
+                Currency = "₺",
+                CustomerBalance = 0
+            };
+            _balanceService.TInsert(balance);
             return Ok();
         }
 
@@ -35,6 +45,9 @@ namespace AkademiPlusApi.PresentationLayer.Controllers
         {
             var deletedCustomer = _customerService.TGetByID(id);
             _customerService.TDelete(deletedCustomer);
+            var balanceList = _balanceService.TGetList();
+            var balance = balanceList.Find(x => x.AccountNumber == deletedCustomer.AccountNumber);
+            _balanceService.TDelete(balance);
             return Ok();
         }
 

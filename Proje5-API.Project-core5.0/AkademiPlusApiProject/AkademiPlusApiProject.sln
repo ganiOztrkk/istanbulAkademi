@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkademiPlusApi.DataAccsessL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkademiPlusApi.BusinessLayer", "AkademiPlusApi.BusinessLayer\AkademiPlusApi.BusinessLayer.csproj", "{DCDFC851-E099-44F9-98B1-11F3FBF5744B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkademiApi.ConsumeLayer", "AkademiApi.ConsumeLayer\AkademiApi.ConsumeLayer.csproj", "{30FF4E95-8213-4BCC-AFBB-08BBAF4E755B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{DCDFC851-E099-44F9-98B1-11F3FBF5744B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCDFC851-E099-44F9-98B1-11F3FBF5744B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCDFC851-E099-44F9-98B1-11F3FBF5744B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30FF4E95-8213-4BCC-AFBB-08BBAF4E755B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30FF4E95-8213-4BCC-AFBB-08BBAF4E755B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30FF4E95-8213-4BCC-AFBB-08BBAF4E755B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30FF4E95-8213-4BCC-AFBB-08BBAF4E755B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
