@@ -27,8 +27,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.DataAccessLayer\\AkademiPlusApi.DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.DataAccessLayer\\AkademiPlusApi.DataAccessLayer.csproj"
+              "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.DataAccsessLayer\\AkademiPlusApi.DataAccsessLayer.csproj": {
+                "projectPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.DataAccsessLayer\\AkademiPlusApi.DataAccsessLayer.csproj"
               },
               "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.EntityLayer\\AkademiPlusApi.EntityLayer.csproj": {
                 "projectPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.EntityLayer\\AkademiPlusApi.EntityLayer.csproj"
@@ -87,14 +87,14 @@
         }
       }
     },
-    "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.DataAccessLayer\\AkademiPlusApi.DataAccessLayer.csproj": {
+    "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.DataAccsessLayer\\AkademiPlusApi.DataAccsessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.DataAccessLayer\\AkademiPlusApi.DataAccessLayer.csproj",
-        "projectName": "AkademiPlusApi.DataAccessLayer",
-        "projectPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.DataAccessLayer\\AkademiPlusApi.DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.DataAccsessLayer\\AkademiPlusApi.DataAccsessLayer.csproj",
+        "projectName": "AkademiPlusApi.DataAccsessLayer",
+        "projectPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.DataAccsessLayer\\AkademiPlusApi.DataAccsessLayer.csproj",
         "packagesPath": "C:\\Users\\gani9\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.DataAccsessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gani9\\AppData\\Roaming\\NuGet\\NuGet.Config",

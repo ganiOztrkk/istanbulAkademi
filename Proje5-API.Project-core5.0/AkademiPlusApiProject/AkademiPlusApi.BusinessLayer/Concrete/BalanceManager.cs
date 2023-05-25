@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AkademiPlusApi.BusinessLayer.Abstract;
-using AkademiPlusApi.DataAccessLayer.Abstract;
+using AkademiPlusApi.DataAccsessLayer.Abstract;
 using AkademiPlusApi.EntityLayer.Concrete;
+using Microsoft.EntityFrameworkCore;
 
 namespace AkademiPlusApi.BusinessLayer.Concrete
 {
@@ -18,19 +19,19 @@ namespace AkademiPlusApi.BusinessLayer.Concrete
             _balanceDal = balanceDal;
         }
 
-        public void TInsert(Balance t)
+        public void TInsert(Balance entity)
         {
-            _balanceDal.Insert(t);
+            _balanceDal.Insert(entity);
         }
 
-        public void TDelete(Balance t)
+        public void TDelete(Balance entity)
         {
-            _balanceDal.Delete(t);
+            _balanceDal.Delete(entity);
         }
 
-        public void TUpdate(Balance t)
+        public void TUpdate(Balance entity)
         {
-            _balanceDal.Update(t);
+            _balanceDal.Update(entity);
         }
 
         public List<Balance> TGetList()

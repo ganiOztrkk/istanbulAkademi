@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AkademiPlusApi.EntityLayer.Concrete
 {
-    public class Activity
+    public class Activity: IEntity
     {
         public int ActivityID { get; set; }
         public string SenderAccount { get; set; }

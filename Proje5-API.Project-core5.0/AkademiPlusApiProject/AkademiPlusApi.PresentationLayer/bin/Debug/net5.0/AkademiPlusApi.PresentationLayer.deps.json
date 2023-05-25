@@ -34,7 +34,7 @@
       "AkademiPlusApi.PresentationLayer/1.0.0": {
         "dependencies": {
           "AkademiPlusApi.BusinessLayer": "1.0.0",
-          "AkademiPlusApi.DataAccessLayer": "1.0.0",
+          "AkademiPlusApi.DataAccsessLayer": "1.0.0",
           "AkademiPlusApi.EntityLayer": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.Design": "5.0.17",
@@ -1379,7 +1379,7 @@
       },
       "AkademiPlusApi.BusinessLayer/1.0.0": {
         "dependencies": {
-          "AkademiPlusApi.DataAccessLayer": "1.0.0",
+          "AkademiPlusApi.DataAccsessLayer": "1.0.0",
           "AkademiPlusApi.EntityLayer": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
@@ -1391,17 +1391,17 @@
           "AkademiPlusApi.BusinessLayer.dll": {}
         }
       },
-      "AkademiPlusApi.DataAccessLayer/1.0.0": {
+      "AkademiPlusApi.DataAccsessLayer/1.0.0": {
         "dependencies": {
           "AkademiPlusApi.EntityLayer": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
         },
         "runtime": {
-          "AkademiPlusApi.DataAccessLayer.dll": {}
+          "AkademiPlusApi.DataAccsessLayer.dll": {}
         },
         "compile": {
-          "AkademiPlusApi.DataAccessLayer.dll": {}
+          "AkademiPlusApi.DataAccsessLayer.dll": {}
         }
       },
       "AkademiPlusApi.EntityLayer/1.0.0": {
@@ -3836,7 +3836,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AkademiPlusApi.DataAccessLayer/1.0.0": {
+    "AkademiPlusApi.DataAccsessLayer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

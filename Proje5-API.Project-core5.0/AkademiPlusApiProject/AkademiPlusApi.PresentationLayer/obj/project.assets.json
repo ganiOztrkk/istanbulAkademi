@@ -1858,7 +1858,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "AkademiPlusApi.DataAccessLayer": "1.0.0",
+          "AkademiPlusApi.DataAccsessLayer": "1.0.0",
           "AkademiPlusApi.EntityLayer": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
@@ -1870,7 +1870,7 @@
           "bin/placeholder/AkademiPlusApi.BusinessLayer.dll": {}
         }
       },
-      "AkademiPlusApi.DataAccessLayer/1.0.0": {
+      "AkademiPlusApi.DataAccsessLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -1879,10 +1879,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
         },
         "compile": {
-          "bin/placeholder/AkademiPlusApi.DataAccessLayer.dll": {}
+          "bin/placeholder/AkademiPlusApi.DataAccsessLayer.dll": {}
         },
         "runtime": {
-          "bin/placeholder/AkademiPlusApi.DataAccessLayer.dll": {}
+          "bin/placeholder/AkademiPlusApi.DataAccsessLayer.dll": {}
         }
       },
       "AkademiPlusApi.EntityLayer/1.0.0": {
@@ -6279,10 +6279,10 @@
       "path": "../AkademiPlusApi.BusinessLayer/AkademiPlusApi.BusinessLayer.csproj",
       "msbuildProject": "../AkademiPlusApi.BusinessLayer/AkademiPlusApi.BusinessLayer.csproj"
     },
-    "AkademiPlusApi.DataAccessLayer/1.0.0": {
+    "AkademiPlusApi.DataAccsessLayer/1.0.0": {
       "type": "project",
-      "path": "../AkademiPlusApi.DataAccessLayer/AkademiPlusApi.DataAccessLayer.csproj",
-      "msbuildProject": "../AkademiPlusApi.DataAccessLayer/AkademiPlusApi.DataAccessLayer.csproj"
+      "path": "../AkademiPlusApi.DataAccsessLayer/AkademiPlusApi.DataAccsessLayer.csproj",
+      "msbuildProject": "../AkademiPlusApi.DataAccsessLayer/AkademiPlusApi.DataAccsessLayer.csproj"
     },
     "AkademiPlusApi.EntityLayer/1.0.0": {
       "type": "project",
@@ -6293,7 +6293,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "AkademiPlusApi.BusinessLayer >= 1.0.0",
-      "AkademiPlusApi.DataAccessLayer >= 1.0.0",
+      "AkademiPlusApi.DataAccsessLayer >= 1.0.0",
       "AkademiPlusApi.EntityLayer >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.17",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.17",
@@ -6331,8 +6331,8 @@
             "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.BusinessLayer\\AkademiPlusApi.BusinessLayer.csproj": {
               "projectPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.BusinessLayer\\AkademiPlusApi.BusinessLayer.csproj"
             },
-            "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.DataAccessLayer\\AkademiPlusApi.DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.DataAccessLayer\\AkademiPlusApi.DataAccessLayer.csproj"
+            "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.DataAccsessLayer\\AkademiPlusApi.DataAccsessLayer.csproj": {
+              "projectPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.DataAccsessLayer\\AkademiPlusApi.DataAccsessLayer.csproj"
             },
             "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.EntityLayer\\AkademiPlusApi.EntityLayer.csproj": {
               "projectPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje5-API.Project-core5.0\\AkademiPlusApiProject\\AkademiPlusApi.EntityLayer\\AkademiPlusApi.EntityLayer.csproj"

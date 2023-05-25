@@ -12,6 +12,7 @@ namespace AkademiPlusApi.PresentationLayer.Controllers
         {
             return Ok();
         }
+
         [HttpDelete]
         public IActionResult Test()
         {

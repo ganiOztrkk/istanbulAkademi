@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AkademiPlusApi.EntityLayer.Concrete
 {
-    public class Customer
+    public class Customer : IEntity
     {
         public int CustomerID { get; set; }
         public string CustomerName { get; set; }

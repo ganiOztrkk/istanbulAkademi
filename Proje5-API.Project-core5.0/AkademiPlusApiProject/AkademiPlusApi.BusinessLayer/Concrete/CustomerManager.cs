@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AkademiPlusApi.BusinessLayer.Abstract;
-using AkademiPlusApi.DataAccessLayer.Abstract;
+using AkademiPlusApi.DataAccsessLayer.Abstract;
 using AkademiPlusApi.EntityLayer.Concrete;
 
 namespace AkademiPlusApi.BusinessLayer.Concrete
@@ -18,19 +18,19 @@ namespace AkademiPlusApi.BusinessLayer.Concrete
             _customerDal = customerDal;
         }
 
-        public void TInsert(Customer t)
+        public void TInsert(Customer entity)
         {
-            _customerDal.Insert(t);
+            _customerDal.Insert(entity);
         }
 
-        public void TDelete(Customer t)
+        public void TDelete(Customer entity)
         {
-            _customerDal.Delete(t);
+            _customerDal.Delete(entity);
         }
 
-        public void TUpdate(Customer t)
+        public void TUpdate(Customer entity)
         {
-            _customerDal.Update(t);
+            _customerDal.Update(entity);
         }
 
         public List<Customer> TGetList()
@@ -41,11 +41,6 @@ namespace AkademiPlusApi.BusinessLayer.Concrete
         public Customer TGetByID(int id)
         {
             return _customerDal.GetByID(id);
-        }
-
-        public int TGetCustomerCounts()
-        {
-            return _customerDal.GetCustomerCounts();
         }
     }
 }

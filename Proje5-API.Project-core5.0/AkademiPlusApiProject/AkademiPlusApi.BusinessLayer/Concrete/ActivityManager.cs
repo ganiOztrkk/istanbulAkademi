@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AkademiPlusApi.BusinessLayer.Abstract;
-using AkademiPlusApi.DataAccessLayer.Abstract;
+using AkademiPlusApi.DataAccsessLayer.Abstract;
 using AkademiPlusApi.EntityLayer.Concrete;
 
 namespace AkademiPlusApi.BusinessLayer.Concrete
@@ -18,19 +18,19 @@ namespace AkademiPlusApi.BusinessLayer.Concrete
             _activityDal = activityDal;
         }
 
-        public void TInsert(Activity t)
+        public void TInsert(Activity entity)
         {
-            _activityDal.Insert(t);
+            _activityDal.Insert(entity);
         }
 
-        public void TDelete(Activity t)
+        public void TDelete(Activity entity)
         {
-            _activityDal.Delete(t);
+            _activityDal.Delete(entity);
         }
 
-        public void TUpdate(Activity t)
+        public void TUpdate(Activity entity)
         {
-            _activityDal.Update(t);
+            _activityDal.Update(entity);
         }
 
         public List<Activity> TGetList()

@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AkademiPlusApi.BusinessLayer\AkademiPlusApi.BusinessLayer.csproj" />
-    <ProjectReference Include="..\AkademiPlusApi.DataAccessLayer\AkademiPlusApi.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\AkademiPlusApi.DataAccsessLayer\AkademiPlusApi.DataAccsessLayer.csproj" />
     <ProjectReference Include="..\AkademiPlusApi.EntityLayer\AkademiPlusApi.EntityLayer.csproj" />
   </ItemGroup>
 

@@ -33,8 +33,8 @@ namespace AkademiPlusApi.PresentationLayer.Controllers
         [HttpDelete]
         public IActionResult CustomerDelete(int id)
         {
-            var values = _customerService.TGetByID(id);
-            _customerService.TDelete(values);
+            var deletedCustomer = _customerService.TGetByID(id);
+            _customerService.TDelete(deletedCustomer);
             return Ok();
         }
 
@@ -48,14 +48,9 @@ namespace AkademiPlusApi.PresentationLayer.Controllers
         [HttpGet("{id}")]
         public IActionResult GetCustomer(int id)
         {
-            var values = _customerService.TGetByID(id);
-            return Ok(values);
+             var selectedCustomer = _customerService.TGetByID(id);
+            return Ok(selectedCustomer);
         }
 
-        [HttpGet("GetCustomerCounts")]
-        public IActionResult GetCustomerCounts()
-        {
-            return Ok(_customerService.TGetCustomerCounts());
-        }
     }
 }
