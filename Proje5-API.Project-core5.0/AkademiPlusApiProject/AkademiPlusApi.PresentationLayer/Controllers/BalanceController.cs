@@ -27,7 +27,7 @@ namespace AkademiPlusApi.PresentationLayer.Controllers
         public IActionResult AddBalance(Balance balance)
         {
             _balanceService.TInsert(balance);
-            return Ok(balance);
+            return Ok();
         }
 
         [HttpDelete]
