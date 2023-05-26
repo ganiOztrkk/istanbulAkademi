@@ -76,11 +76,18 @@ namespace AkademiApi.ConsumeLayer.Controllers
             return View();
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> UpdateCustomer(UpdateCustomerViewModel updateCustomerViewModel)
-        //{
-        //    var client = _httpClientFactory.CreateClient();
-        //    var responseMessage = await client.PutAsync("https://localhost:44338/api/Customer/")
-        //}
+        [HttpPost]
+        public async Task<IActionResult> UpdateCustomer(UpdateCustomerViewModel updateCustomerViewModel)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var jsonData = JsonConvert.SerializeObject(updateCustomerViewModel);
+            StringContent content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            var responseMessage = await client.PutAsync("https://localhost:44338/api/Customer/", content);
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
     }
 }
