@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\AkademiPlusApiProject.RapidApi.props" />
+</Project>

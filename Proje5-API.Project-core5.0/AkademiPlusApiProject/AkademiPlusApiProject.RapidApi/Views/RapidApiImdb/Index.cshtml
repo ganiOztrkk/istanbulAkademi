@@ -1,0 +1,26 @@
+﻿@model List<RapidApiImdbViewModel>
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <table class="table table-active">
+        <tr>
+            <th>#</th>
+            <th>Film Adı</th>
+            <th>Film Puanı</th>
+            <th>Film Fragmanı</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.rank</td>
+                <td>@item.title</td>
+                <td>@item.rating</td>
+                <td><a href="@item.trailer" class="btn btn-primary">Fragman İzle</a></td>
+            </tr>
+        }
+    </table>
+</div>

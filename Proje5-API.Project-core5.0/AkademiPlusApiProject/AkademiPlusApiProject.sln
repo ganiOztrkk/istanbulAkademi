@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkademiPlusApi.PresentationLayer", "AkademiPlusApi.PresentationLayer\AkademiPlusApi.PresentationLayer.csproj", "{3DB53A2E-6080-481B-BAA8-70CA2C504FB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AkademiPlusApi.PresentationLayer", "AkademiPlusApi.PresentationLayer\AkademiPlusApi.PresentationLayer.csproj", "{3DB53A2E-6080-481B-BAA8-70CA2C504FB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkademiPlusApi.EntityLayer", "AkademiPlusApi.EntityLayer\AkademiPlusApi.EntityLayer.csproj", "{33DAC74F-F391-4C7C-B701-E41DCE162541}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AkademiPlusApi.EntityLayer", "AkademiPlusApi.EntityLayer\AkademiPlusApi.EntityLayer.csproj", "{33DAC74F-F391-4C7C-B701-E41DCE162541}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkademiPlusApi.DataAccsessLayer", "AkademiPlusApi.DataAccsessLayer\AkademiPlusApi.DataAccsessLayer.csproj", "{515EFEA0-ED31-4512-BEFA-9F33C140846B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AkademiPlusApi.DataAccsessLayer", "AkademiPlusApi.DataAccsessLayer\AkademiPlusApi.DataAccsessLayer.csproj", "{515EFEA0-ED31-4512-BEFA-9F33C140846B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkademiPlusApi.BusinessLayer", "AkademiPlusApi.BusinessLayer\AkademiPlusApi.BusinessLayer.csproj", "{DCDFC851-E099-44F9-98B1-11F3FBF5744B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AkademiPlusApi.BusinessLayer", "AkademiPlusApi.BusinessLayer\AkademiPlusApi.BusinessLayer.csproj", "{DCDFC851-E099-44F9-98B1-11F3FBF5744B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkademiApi.ConsumeLayer", "AkademiApi.ConsumeLayer\AkademiApi.ConsumeLayer.csproj", "{30FF4E95-8213-4BCC-AFBB-08BBAF4E755B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AkademiApi.ConsumeLayer", "AkademiApi.ConsumeLayer\AkademiApi.ConsumeLayer.csproj", "{30FF4E95-8213-4BCC-AFBB-08BBAF4E755B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RapidApi", "RapidApi", "{2FD33021-2A9A-4265-BF81-23B588DD4A7E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AkademiPlusApiProject.RapidApi", "AkademiPlusApiProject.RapidApi\AkademiPlusApiProject.RapidApi.csproj", "{195C9A35-8BE6-4AF0-93F1-C81EC39B076B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +43,16 @@ Global
 		{30FF4E95-8213-4BCC-AFBB-08BBAF4E755B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30FF4E95-8213-4BCC-AFBB-08BBAF4E755B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30FF4E95-8213-4BCC-AFBB-08BBAF4E755B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{195C9A35-8BE6-4AF0-93F1-C81EC39B076B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{195C9A35-8BE6-4AF0-93F1-C81EC39B076B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{195C9A35-8BE6-4AF0-93F1-C81EC39B076B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{195C9A35-8BE6-4AF0-93F1-C81EC39B076B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{195C9A35-8BE6-4AF0-93F1-C81EC39B076B} = {2FD33021-2A9A-4265-BF81-23B588DD4A7E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0EF2C824-C29B-42C8-A4F1-06B03E4A7F3C}
