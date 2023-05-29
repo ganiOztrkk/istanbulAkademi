@@ -1,0 +1,30 @@
+﻿@model AkademiPlusCQRS.CQRSPattern.Commands.CreateProductCommand
+
+@{
+    Layout = null;
+}
+
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <form method="post">
+        <br />
+        <label>Ürün Adı</label>
+        <input type="text" class="form-control" asp-for="Name" />
+        <br />
+        <label>Ürün Markası</label>
+        <input type="text" class="form-control" asp-for="Brand" />
+        <br />
+        <label>Ürün Stok</label>
+        <input type="text" class="form-control" asp-for="Stok" />
+        <br />
+        <label>Ürün Fiyat</label>
+        <input type="text" class="form-control" asp-for="Price" />
+        <br />
+        <label>Ürün Kategori</label>
+        <input type="text" class="form-control" asp-for="Category" />
+        <br />
+        <button class="btn btn-success">Ürün Ekle</button>
+    </form>
+</div>
