@@ -1,0 +1,23 @@
+﻿@model CQRS_Postgre.CQRSPattern.Results.GetEmployeeByIDQueryResult
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br/>
+    <label>Personel ID</label>
+    <input type="text" class="form-control" asp-for="EmployeeID" readonly/>
+    <br/>
+    <label>Personel Ad</label>
+    <input type="text" class="form-control" asp-for="EmployeeName" readonly/>
+    <br />
+    <label>Personel Soyad</label>
+    <input type="text" class="form-control" asp-for="EmployeeSurname" readonly/>
+    <br/>
+    <label>Personel Ünvan</label>
+    <input type="text" class="form-control" asp-for="EmployeeTitle" readonly/>
+    <br/>
+    <a href="/Employee/Index/" class="btn btn-check">Listeye Dön</a>
+</div>

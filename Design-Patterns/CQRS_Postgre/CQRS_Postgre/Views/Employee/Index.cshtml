@@ -1,0 +1,40 @@
+﻿@model List<CQRS_Postgre.CQRSPattern.Results.GetEmployeeQueryResult>
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br/>
+    <table class="table table-hover">
+        <tr>
+            <th>#</th>
+            <th>Personel Adı</th>
+            <th>Personel Soyadı</th>
+            <th>Personel Ünvan</th>
+            <th>Personel Yaş</th>
+            <th>Personel Şehir</th>
+            <th>Personel Maaş</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+            <th>Detaylar</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.EmployeeID</td>
+                <td>@item.EmployeeName</td>
+                <td>@item.EmployeeSurname</td>
+                <td>@item.EmployeeTitle</td>
+                <td>@item.EmployeeAge</td>
+                <td>@item.EmployeeCity</td>
+                <td>@item.EmployeeSalary</td>
+                <td><a href="/Employee/DeleteEmployee/@item.EmployeeID" class="btn btn-danger">Sil</a></td>
+                <td><a href="/Employee/UpdateEmployee/@item.EmployeeID" class="btn btn-warning">Güncelle</a></td>
+                <td><a href="/Employee/EmployeeDetails/@item.EmployeeID" class="btn btn-dark">Detay</a></td>
+            </tr>
+        }
+    </table>
+    <a href="/Employee/AddEmployee/" class="btn btn-primary">Personel Ekle</a>
+</div>

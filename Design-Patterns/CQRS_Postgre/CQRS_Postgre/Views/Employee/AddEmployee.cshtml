@@ -1,0 +1,31 @@
+﻿@model CQRS_Postgre.CQRSPattern.Commands.CreateEmployeeCommand
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <form method="post">
+        <br />
+        <label>Personel Ad</label>
+        <input type="text" class="form-control" asp-for="EmployeeName" required />
+        <br />
+        <label>Personel Soyad</label>
+        <input type="text" class="form-control" asp-for="EmployeeSurname" required />
+        <br />
+        <label>Personel Ünvan</label>
+        <input type="text" class="form-control" asp-for="EmployeeTitle" required />
+        <br />
+        <label>Personel Şehir</label>
+        <input type="text" class="form-control" asp-for="EmployeeCity" required />
+        <br />
+        <label>Personel Yaş</label>
+        <input type="text" class="form-control" asp-for="EmployeeAge" required />
+        <br />
+        <label>Personel Maaş</label>
+        <input type="text" class="form-control" asp-for="EmployeeSalary" required />
+        <br />
+        <button class="btn btn-outline-warning">Personel Ekle</button>
+    </form>
+</div>
