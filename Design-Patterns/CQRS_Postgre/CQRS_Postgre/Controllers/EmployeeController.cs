@@ -12,14 +12,16 @@ namespace CQRS_Postgre.Controllers
         private readonly CreateEmployeeCommandHandler _handlerCreateEmployee;
         private readonly RemoveEmployeeCommandHandler _handlerRemoveEmployee;
         private readonly GetEmployeeUpdateByIDQueryHandler _handlerGetEmployee;
+        private readonly UpdateEmployeeCommandHandler _handlerUpdateEmployee;
 
-        public EmployeeController(GetEmployeeQueryHandler handler, GetEmployeeByIDQueryHandler handlerId, CreateEmployeeCommandHandler handlerCreateEmployee, RemoveEmployeeCommandHandler handlerRemoveEmployee, GetEmployeeUpdateByIDQueryHandler handlerGetEmployee)
+        public EmployeeController(GetEmployeeQueryHandler handler, GetEmployeeByIDQueryHandler handlerId, CreateEmployeeCommandHandler handlerCreateEmployee, RemoveEmployeeCommandHandler handlerRemoveEmployee, GetEmployeeUpdateByIDQueryHandler handlerGetEmployee, UpdateEmployeeCommandHandler handlerUpdateEmployee)
         {
             _handler = handler;
             _handlerId = handlerId;
             _handlerCreateEmployee = handlerCreateEmployee;
             _handlerRemoveEmployee = handlerRemoveEmployee;
             _handlerGetEmployee = handlerGetEmployee;
+            _handlerUpdateEmployee = handlerUpdateEmployee;
         }
 
         public IActionResult Index()
@@ -59,6 +61,12 @@ namespace CQRS_Postgre.Controllers
             var value = _handlerGetEmployee.Handle(new GetEmployeeUpdateByIDQuery(id));
             return View(value);
         }
-        
+
+        [HttpPost]
+        public IActionResult UpdateEmployee(UpdateEmployeeCommand command)
+        {
+            _handlerUpdateEmployee.Handle(command);
+            return RedirectToAction("Index");
+        }
     }
 }

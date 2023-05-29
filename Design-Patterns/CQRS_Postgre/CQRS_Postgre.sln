@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS_Postgre", "CQRS_Postgre\CQRS_Postgre.csproj", "{0C71929B-C5FF-4F5C-819B-1F4F483873F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorAkademiPlusPostgre", "MediatorAkademiPlusPostgre\MediatorAkademiPlusPostgre.csproj", "{11C05BF3-7079-4146-8AC5-FEC0CB2F0186}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0C71929B-C5FF-4F5C-819B-1F4F483873F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C71929B-C5FF-4F5C-819B-1F4F483873F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C71929B-C5FF-4F5C-819B-1F4F483873F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11C05BF3-7079-4146-8AC5-FEC0CB2F0186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11C05BF3-7079-4146-8AC5-FEC0CB2F0186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11C05BF3-7079-4146-8AC5-FEC0CB2F0186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11C05BF3-7079-4146-8AC5-FEC0CB2F0186}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
