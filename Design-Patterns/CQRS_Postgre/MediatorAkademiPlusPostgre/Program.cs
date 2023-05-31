@@ -1,7 +1,16 @@
+using System.Reflection;
+using MediatorAkademiPlusPostgre.DAL;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+
+builder.Services.AddEntityFrameworkNpgsql().AddDbContext<Context>(opt =>
+    opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddControllersWithViews();
+
 
 var app = builder.Build();
 
