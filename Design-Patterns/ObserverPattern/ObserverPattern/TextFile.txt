@@ -1,0 +1,27 @@
+﻿devamlı magazaya gidip gelme güzel kardesim. bültene üye ol. ben sana mail üzerinden bildirim gondericem. 
+
+peki bu sefer tum musterilerime ilgisiz ürünlerin gelip gelmediğini mi bildiricem ? işte sorun bu
+
+yayıncının durumundaki değişiklikleri izlemek isteyen tüm nesnelere abone denir.
+
+Observer design pattern, özellikle abonelik yapısı gerektiren projelerde kullanılan bir tasarım desenidir.
+
+
+Kullanıcıyı sisteme kaydet
+--------------
+welcome mesajı
+---
+discount code create
+---
+user process
+--------------
+
+
+1. adım IObserver interfacemiz içerisinde kullanıcının oluşturulması metodunu barındırıcak
+
+2. adım ObserverOnject isimli bir sınıf olacak. bu sınıf gözlemciye ait işlemleri takip edecek.
+işlem kaydı(indirim tanımlama, bülten iletme, dergi gazete vs eve gonderme)
+işlem silme(yukarıda örnekleri verilen işlemlerin silinmesi ya da askıya alınması işlemi)
+bildirim gönderme
+işlemlerin listelenmesi
+
