@@ -18,14 +18,65 @@
                 statusshow();
             });
             $("#btnSave").click(()=>{
-                connection.invoke("sendName",$("#txtName").val());
+                connection.invoke("SendName",$("#txtName").val());
             });
             connection.on("receiveName",(name)=>{
                 console.log(name);
+                $("#namesList").append(`<li class="list-group-item">${name}</li>`);
             });
             connection.on("receiveClientCount",(clientCount)=>{
                 $("#clientCount").text(clientCount);
-            })
+            });
+            connection.on("Notify",countText=>{
+                $("#notify").html(`<div class="alert alert-success">${countText}></div>`);
+            });
+            connection.on("Error",(errorText)=>{
+                alert(errorText);
+            });
+
+            connection.on("receiveNames",(Names)=>{
+                $("#namesList").empty();
+                Names.forEach((item,index)=>{
+                    $("#namesList").append(`<li class="list-group-item">${item}</li>`);
+                });
+            });
+
+            $("#btnRoomName").click(()=>{
+                let name=$("#txtName").val();
+                let roomName=$("input[type=radio]:checked").val();
+                if(roomName==null)
+                {
+                    alert("Lütfen Oda Seçiniz.");
+                    return;
+                }
+                connection.invoke("SendNameByGroup", name, roomName);
+            });
+            
+            connection.on("receiveMessageByGroup",(name,roomID)=>{
+                let listName;
+                if(roomID==1)
+                {
+                    listName = "tekirdagRoomList";
+                }
+                else
+                {
+                    listName = "ankaraRoomList";
+                }
+                $(`#${listName}`).append(`<li class="list-group-item">${name}</li>`);
+            });
+
+            $("input[type=radio]").change(() => {
+                let value = $(`input[type=radio]:checked`).val();
+                if (value == "Tekirdag") {
+                    connection.invoke("AddToGroup", value);
+                    connection.invoke("RemoveToGroup", "Ankara");
+                }
+                else 
+                {
+                    connection.invoke("AddToGroup", value);
+                    connection.invoke("RemoveFromGroup", "Tekirdag");
+                }
+            });
     });
     </script>
 }
@@ -40,6 +91,34 @@
             <div>
                 Bağlantı Durumu: <strong id="conStatus"></strong>
                 Client Sayısı: <strong id="clientCount"></strong>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8 offset-2">
+        <ul class="list-group" id="namesList"></ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8 offset-2">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="roomGroup" value="Tekirdag"/>
+            <label class="form-check-label">Tekirdağ Odası</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="roomGroup" value="Ankara" />
+            <label class="form-check-label">Ankara Odası</label>
+        </div>
+    </div>
+    <div class="col-md-8 offset-2">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Tekirdağ Odası</h2>
+                <ul class="list-group" id="tekirdagRoomList"></ul>
+            </div>
+            <div class="col-md-6">
+                <h2>Ankara Odası</h2>
+                <ul class="list-group" id="ankaraRoomList"></ul>
             </div>
         </div>
     </div>
