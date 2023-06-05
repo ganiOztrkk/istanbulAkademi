@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using ObserverPattern.DAL;
 
 namespace ObserverPattern.ObserverPattern
 {
@@ -6,7 +7,7 @@ namespace ObserverPattern.ObserverPattern
     {
         private readonly List<IObserver> _observers;
 
-        public ObserverObject()
+        public ObserverObject() // bu sınıftan nesne ornegi alındığı anda
         {
             _observers = new List<IObserver>(); // bizim için işlemlerin listelenmesi kısmına karşılık gelecek
         }
@@ -19,6 +20,14 @@ namespace ObserverPattern.ObserverPattern
         public void RemoveObserver(IObserver observer)
         {
             _observers.Remove(observer);
+        }
+
+        public void NotifyObserver(AppUser appUser)
+        {
+            _observers.ForEach(x =>
+            {
+                x.CreateNewUser(appUser);
+            });
         }
     }
 }

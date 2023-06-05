@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ObserverPattern.DAL;
+using ObserverPattern.ObserverPattern;
 
 namespace ObserverPattern
 {
@@ -23,6 +25,18 @@ namespace ObserverPattern
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<Context>();
+            services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();
+
+            services.AddSingleton<ObserverObject>(sp =>
+            {
+                ObserverObject observerObject = new();
+                observerObject.RegisterObserver(new CreateWelcomeMessage(sp));
+                observerObject.RegisterObserver(new CreateDiscountCode(sp));
+                observerObject.RegisterObserver(new CreateMagazineAnnouncementObserver(sp));
+                return observerObject;
+            });
+
             services.AddControllersWithViews();
         }
 
