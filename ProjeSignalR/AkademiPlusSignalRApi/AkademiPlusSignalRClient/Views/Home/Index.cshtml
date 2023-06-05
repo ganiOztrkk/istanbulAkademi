@@ -7,60 +7,60 @@
 @section Scripts
 {
     <script>
-    $(document).ready(()=>{
-            var connection = new signalR.HubConnectionBuilder().withAutomaticReconnect([1000,2000,3000,6000]).withUrl("https://localhost:44360/MyHub").build();
-            function statusshow(){
+        $(document).ready(() => {
+            var connection = new signalR.HubConnectionBuilder().withAutomaticReconnect([1000, 2000, 3000, 6000]).withUrl("https://localhost:44360/MyHub").build();
+            function statusshow() {
                 $("#conStatus").text(connection.connectionState);
-            } 
+            }
             statusshow();
-            
-            connection.start().then(()=>{
+
+            connection.start().then(() => {
                 statusshow();
             });
-            $("#btnSave").click(()=>{
-                connection.invoke("SendName",$("#txtName").val());
-            });
-            connection.on("receiveName",(name)=>{
-                console.log(name);
+
+            connection.on("receiveName", (name) => {
                 $("#namesList").append(`<li class="list-group-item">${name}</li>`);
             });
-            connection.on("receiveClientCount",(clientCount)=>{
+            $("#btnSave").click(() => {
+                connection.invoke("SendName", $("#txtName").val());
+            });
+            connection.on("receiveClientCount", (clientCount) => {
                 $("#clientCount").text(clientCount);
             });
-            connection.on("Notify",countText=>{
+            connection.on("Notify", countText => {
                 $("#notify").html(`<div class="alert alert-success">${countText}></div>`);
             });
-            connection.on("Error",(errorText)=>{
+            connection.on("Error", (errorText) => {
                 alert(errorText);
             });
 
-            connection.on("receiveNames",(Names)=>{
+            connection.on("receiveNames", (Names) => {
                 $("#namesList").empty();
-                Names.forEach((item,index)=>{
+                Names.forEach((item, index) => {
                     $("#namesList").append(`<li class="list-group-item">${item}</li>`);
                 });
             });
 
-            $("#btnRoomName").click(()=>{
-                let name=$("#txtName").val();
-                let roomName=$("input[type=radio]:checked").val();
-                if(roomName==null)
-                {
+            $("#btnRoomName").click(() => {
+                let name = $("#txtName").val();
+                let roomName = $("input[type=radio]:checked").val();
+                if (roomName == null) {
                     alert("Lütfen Oda Seçiniz.");
                     return;
                 }
                 connection.invoke("SendNameByGroup", name, roomName);
             });
-            
-            connection.on("receiveMessageByGroup",(name,roomID)=>{
+
+            connection.on("receiveMessageByGroup", (name, roomID) => {
                 let listName;
-                if(roomID==1)
-                {
+                if (roomID == 1) {
                     listName = "tekirdagRoomList";
                 }
-                else
-                {
+                else if (roomID == 2) {
                     listName = "ankaraRoomList";
+                }
+                else {
+                    listName = "adanaRoomList";
                 }
                 $(`#${listName}`).append(`<li class="list-group-item">${name}</li>`);
             });
@@ -70,21 +70,27 @@
                 if (value == "Tekirdag") {
                     connection.invoke("AddToGroup", value);
                     connection.invoke("RemoveToGroup", "Ankara");
+                    connection.invoke("RemoveToGroup", "Adana");
                 }
-                else 
-                {
+                else if (value == "Ankara") {
                     connection.invoke("AddToGroup", value);
                     connection.invoke("RemoveFromGroup", "Tekirdag");
+                    connection.invoke("RemoveFromGroup", "Adana");
+                }
+                else {
+                    connection.invoke("AddToGroup", value);
+                    connection.invoke("RemoveFromGroup", "Tekirdag");
+                    connection.invoke("RemoveFromGroup", "Ankara");
                 }
             });
-    });
+        });
     </script>
 }
 
 <div class="row">
     <div class="col-md-8 offset-2">
-        <input type="text" class="form-control" id="txtName"/>
-        <hr/>
+        <input type="text" class="form-control" id="txtName" />
+        <hr />
         <button class="btn btn-warning" id="btnSave">Kaydet</button>
         <button class="btn btn-primary" id="btnRoomName">Odaya Kişi Ekle</button>
         <div class="alert alert-info mt-2">
@@ -102,23 +108,31 @@
 <div class="row">
     <div class="col-md-8 offset-2">
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="roomGroup" value="Tekirdag"/>
+            <input class="form-check-input" type="radio" name="roomGroup" value="Tekirdag" />
             <label class="form-check-label">Tekirdağ Odası</label>
         </div>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="roomGroup" value="Ankara" />
             <label class="form-check-label">Ankara Odası</label>
         </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="roomGroup" value="Adana" />
+            <label class="form-check-label">Adana Odası</label>
+        </div>
     </div>
     <div class="col-md-8 offset-2">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <h2>Tekirdağ Odası</h2>
                 <ul class="list-group" id="tekirdagRoomList"></ul>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <h2>Ankara Odası</h2>
                 <ul class="list-group" id="ankaraRoomList"></ul>
+            </div>
+            <div class="col-md-4">
+                <h2>Adana Odası</h2>
+                <ul class="list-group" id="adanaRoomList"></ul>
             </div>
         </div>
     </div>

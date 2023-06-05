@@ -20,12 +20,7 @@ namespace AkademiPlusSignalRApi.Hubs
         {
             _context = context;
         }
-
-        //public async Task sendName(string name)
-        //{
-        //    Names.Add(name);
-        //    await Clients.All.SendAsync("receiveName", name);
-        //}
+        
         public async Task SendName(string name)
         {
             if (Names.Count >= RoomCount)
@@ -46,6 +41,8 @@ namespace AkademiPlusSignalRApi.Hubs
             await Clients.All.SendAsync("receiveClientCount", ClientCount);
         }
 
+
+
         public override async Task OnDisconnectedAsync(Exception exception)
         {
             ClientCount--;
@@ -54,7 +51,7 @@ namespace AkademiPlusSignalRApi.Hubs
 
         public async Task SendNameByGroup(string name, string roomName)
         {
-            var room = _context.Rooms.Where(x => x.RoomName == roomName).FirstOrDefault();
+            var room = _context.Rooms.FirstOrDefault(x => x.RoomName == roomName);
             if (room != null)
             {
                 room.Users.Add(new User()
