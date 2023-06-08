@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkademiPlusSignalR-2", "AkademiPlusSignalR-2\AkademiPlusSignalR-2.csproj", "{3452C001-96FB-4708-B9E9-46D1871BE63C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkademiPlusSignalR2.Consume", "AkademiPlusSignalR2.Consume\AkademiPlusSignalR2.Consume.csproj", "{79C40FAD-D15F-40A5-80FD-9A7227F61FBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3452C001-96FB-4708-B9E9-46D1871BE63C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3452C001-96FB-4708-B9E9-46D1871BE63C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3452C001-96FB-4708-B9E9-46D1871BE63C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3452C001-96FB-4708-B9E9-46D1871BE63C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79C40FAD-D15F-40A5-80FD-9A7227F61FBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79C40FAD-D15F-40A5-80FD-9A7227F61FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79C40FAD-D15F-40A5-80FD-9A7227F61FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79C40FAD-D15F-40A5-80FD-9A7227F61FBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F137B0D3-C00A-44FD-BD30-499371028421}
+	EndGlobalSection
+EndGlobal
