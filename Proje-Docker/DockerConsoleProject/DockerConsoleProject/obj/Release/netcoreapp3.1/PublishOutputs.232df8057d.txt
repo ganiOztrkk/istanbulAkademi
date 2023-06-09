@@ -1,0 +1,5 @@
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje-Docker\DockerConsoleProject\DockerConsoleProject\bin\Release\netcoreapp3.1\publish\DockerConsoleProject.exe
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje-Docker\DockerConsoleProject\DockerConsoleProject\bin\Release\netcoreapp3.1\publish\DockerConsoleProject.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje-Docker\DockerConsoleProject\DockerConsoleProject\bin\Release\netcoreapp3.1\publish\DockerConsoleProject.deps.json
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje-Docker\DockerConsoleProject\DockerConsoleProject\bin\Release\netcoreapp3.1\publish\DockerConsoleProject.runtimeconfig.json
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje-Docker\DockerConsoleProject\DockerConsoleProject\bin\Release\netcoreapp3.1\publish\DockerConsoleProject.pdb

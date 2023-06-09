@@ -1,0 +1,14 @@
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje-Docker\DockerConsoleProject\DockerConsoleProject\bin\Release\netcoreapp3.1\DockerConsoleProject.exe
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje-Docker\DockerConsoleProject\DockerConsoleProject\bin\Release\netcoreapp3.1\DockerConsoleProject.deps.json
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje-Docker\DockerConsoleProject\DockerConsoleProject\bin\Release\netcoreapp3.1\DockerConsoleProject.runtimeconfig.json
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje-Docker\DockerConsoleProject\DockerConsoleProject\bin\Release\netcoreapp3.1\DockerConsoleProject.runtimeconfig.dev.json
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje-Docker\DockerConsoleProject\DockerConsoleProject\bin\Release\netcoreapp3.1\DockerConsoleProject.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje-Docker\DockerConsoleProject\DockerConsoleProject\bin\Release\netcoreapp3.1\DockerConsoleProject.pdb
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje-Docker\DockerConsoleProject\DockerConsoleProject\obj\Release\netcoreapp3.1\DockerConsoleProject.csproj.AssemblyReference.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje-Docker\DockerConsoleProject\DockerConsoleProject\obj\Release\netcoreapp3.1\DockerConsoleProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje-Docker\DockerConsoleProject\DockerConsoleProject\obj\Release\netcoreapp3.1\DockerConsoleProject.AssemblyInfoInputs.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje-Docker\DockerConsoleProject\DockerConsoleProject\obj\Release\netcoreapp3.1\DockerConsoleProject.AssemblyInfo.cs
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje-Docker\DockerConsoleProject\DockerConsoleProject\obj\Release\netcoreapp3.1\DockerConsoleProject.csproj.CoreCompileInputs.cache
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje-Docker\DockerConsoleProject\DockerConsoleProject\obj\Release\netcoreapp3.1\DockerConsoleProject.dll
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje-Docker\DockerConsoleProject\DockerConsoleProject\obj\Release\netcoreapp3.1\DockerConsoleProject.pdb
+C:\Users\gani9\Documents\GitHub\istanbulAkademi\Proje-Docker\DockerConsoleProject\DockerConsoleProject\obj\Release\netcoreapp3.1\DockerConsoleProject.genruntimeconfig.cache

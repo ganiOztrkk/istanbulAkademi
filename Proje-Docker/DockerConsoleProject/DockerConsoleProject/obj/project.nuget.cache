@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "5QPJxAAKflEEK1QDdCcTZjC1sDrWJdss+7o4wgRxJEHbav5AInITYSnnubNu9ODba84vD0kJTi6igMjT8Ee/3g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje-Docker\\DockerConsoleProject\\DockerConsoleProject\\DockerConsoleProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gani9\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.2\\microsoft.visualstudio.azure.containers.tools.targets.1.17.2.nupkg.sha512"
+  ],
+  "logs": []
+}
