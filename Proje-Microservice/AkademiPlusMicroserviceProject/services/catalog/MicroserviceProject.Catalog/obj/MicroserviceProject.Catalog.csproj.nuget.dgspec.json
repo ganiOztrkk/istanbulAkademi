@@ -4,6 +4,60 @@
     "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje-Microservice\\AkademiPlusMicroserviceProject\\services\\catalog\\MicroserviceProject.Catalog\\MicroserviceProject.Catalog.csproj": {}
   },
   "projects": {
+    "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje-Microservice\\AkademiPlusMicroserviceProject\\MicroserviceProject.Shared\\MicroserviceProject.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje-Microservice\\AkademiPlusMicroserviceProject\\MicroserviceProject.Shared\\MicroserviceProject.Shared.csproj",
+        "projectName": "MicroserviceProject.Shared",
+        "projectPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje-Microservice\\AkademiPlusMicroserviceProject\\MicroserviceProject.Shared\\MicroserviceProject.Shared.csproj",
+        "packagesPath": "C:\\Users\\gani9\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje-Microservice\\AkademiPlusMicroserviceProject\\MicroserviceProject.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gani9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://www.nuget.org/api/v2/curated-feeds/microsoftdotnet/": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje-Microservice\\AkademiPlusMicroserviceProject\\services\\catalog\\MicroserviceProject.Catalog\\MicroserviceProject.Catalog.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -26,7 +80,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje-Microservice\\AkademiPlusMicroserviceProject\\MicroserviceProject.Shared\\MicroserviceProject.Shared.csproj": {
+                "projectPath": "C:\\Users\\gani9\\Documents\\GitHub\\istanbulAkademi\\Proje-Microservice\\AkademiPlusMicroserviceProject\\MicroserviceProject.Shared\\MicroserviceProject.Shared.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -39,7 +97,15 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.19.2, )"
+            },
+            "MongoDB.Driver.Core": {
               "target": "Package",
               "version": "[2.19.2, )"
             },

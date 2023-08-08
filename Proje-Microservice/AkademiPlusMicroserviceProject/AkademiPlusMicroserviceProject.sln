@@ -47,6 +47,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceProject.FakePay
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceProject.Frontend", "frontends\MicroserviceProject.Frontend\MicroserviceProject.Frontend.csproj", "{0A45078B-5057-43E2-A307-D787900F745D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceProject.Shared", "MicroserviceProject.Shared\MicroserviceProject.Shared.csproj", "{497888F0-CE52-44D2-BF8A-5D5BF75742B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{0A45078B-5057-43E2-A307-D787900F745D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A45078B-5057-43E2-A307-D787900F745D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A45078B-5057-43E2-A307-D787900F745D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{497888F0-CE52-44D2-BF8A-5D5BF75742B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{497888F0-CE52-44D2-BF8A-5D5BF75742B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{497888F0-CE52-44D2-BF8A-5D5BF75742B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{497888F0-CE52-44D2-BF8A-5D5BF75742B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -114,6 +120,7 @@ Global
 		{D580FC3E-75B2-4FA6-B5D9-43B03A576443} = {D42301D7-82DD-49E8-A5E8-F90B8BBD4F71}
 		{D41AFBB0-990D-4354-BBC2-B5BCD317E5C2} = {2E7F198A-6585-4402-B846-91EF905AC2EB}
 		{0A45078B-5057-43E2-A307-D787900F745D} = {92B2406D-0CF3-4D8F-BD93-5FAF1A28A3B8}
+		{497888F0-CE52-44D2-BF8A-5D5BF75742B8} = {BCB90058-B306-49BB-ACC8-98C1A4706DB2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D597551A-FC1A-4099-BD76-217E48D4DCB6}
